@@ -1,7 +1,8 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Link from 'next/link'
+import NavBar from './components/NavBar'
 
 const nav = [
   { label: 'Home', href: '/' },
@@ -31,16 +32,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <nav>
-          {nav.map(({ label, href }) => (
-            <Link key={href} href={href}>{label}</Link>
-          ))}
-        </nav>
+        <NavBar />
         <main>{children}</main>
         <footer>
           <p>© {new Date().getFullYear()} Caitlyn Rawlings | Education Portfolio</p>

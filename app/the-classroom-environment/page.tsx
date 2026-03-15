@@ -19,12 +19,12 @@ export default function TheClassroomEnvironment() {
       <div className="section ">
         <h2>Seating Chart</h2>
 
-        <div className="section " style={{ marginBottom: '1rem' }}>
+        <div style={{ marginBottom: '2rem' }}>
           <h3>Current Seating Chart</h3>
           {/* Add your seating chart image or visual here */}
         </div>
 
-        <div className="section " style={{ marginBottom: 0 }}>
+        <div style={{ marginBottom: '2rem' }}>
           <h3>Weekly Seating Rotation</h3>
           {/* Explain your rationale for changing seats weekly — 
               relationship building, behavior, grouping strategy, etc. */}
@@ -35,7 +35,7 @@ export default function TheClassroomEnvironment() {
       <div className="section ">
         <h2>Classroom Management</h2>
 
-        <div className="section " style={{ marginBottom: 0 }}>
+        <div style={{ marginBottom: '2rem' }}>
           <h3>Behavior Escalation Plan</h3>
           {/* Outline your step-by-step escalation:
               e.g. nonverbal cue → proximity → private redirect → 

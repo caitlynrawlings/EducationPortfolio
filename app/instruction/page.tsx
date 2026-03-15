@@ -20,13 +20,13 @@ export default function Instruction() {
       <div className="section ">
         <h2>Personal Lesson Reflections</h2>
 
-        <div className="section " style={{ marginBottom: '1rem' }}>
+        <div style={{ marginBottom: '2rem' }}>
           <h3>Reflection</h3>
           {/* Your written reflections on specific lessons —
               what went well, what didn't, what you noticed */}
         </div>
 
-        <div className="section " style={{ marginBottom: 0 }}>
+        <div style={{ marginBottom: '2rem' }}>
           <h3>Adjustments Made</h3>
           {/* Concrete changes you made to subsequent lessons
               based on your own reflections */}
@@ -37,13 +37,13 @@ export default function Instruction() {
       <div className="section ">
         <h2>Responding to Feedback</h2>
 
-        <div className="section " style={{ marginBottom: '1rem' }}>
+        <div style={{ marginBottom: '2rem' }}>
           <h3>Feedback Received</h3>
           {/* Summarize feedback from your mentor teacher, 
               university supervisor, or formal observations */}
         </div>
 
-        <div className="section " style={{ marginBottom: 0 }}>
+        <div style={{ marginBottom: '2rem' }}>
           <h3>How I Responded & Adjusted</h3>
           {/* Specific changes you made in response to that feedback —
               this is one of the strongest things you can show an evaluator */}

@@ -18,17 +18,17 @@ export default function PlanningAndPreparation() {
       <div className="section ">
         <h2>Differentiated Materials</h2>
 
-        <div className="section " style={{ marginBottom: '1rem' }}>
+        <div style={{ marginBottom: '2rem' }}>
           <h3>Content</h3>
           {/* How you differentiated WHAT students learned */}
         </div>
 
-        <div className="section " style={{ marginBottom: '1rem' }}>
+        <div style={{ marginBottom: '2rem' }}>
           <h3>Process</h3>
           {/* How you differentiated HOW students learned */}
         </div>
 
-        <div className="section " style={{ marginBottom: 0 }}>
+        <div style={{ marginBottom: '2rem' }}>
           <h3>Product</h3>
           {/* How you differentiated HOW students showed learning */}
         </div>
@@ -38,12 +38,12 @@ export default function PlanningAndPreparation() {
       <div className="section ">
         <h2>Assessment Tools & Data Analysis</h2>
 
-        <div className="section " style={{ marginBottom: '1rem' }}>
+        <div style={{ marginBottom: '2rem' }}>
           <h3>Assessment Tools</h3>
           {/* Describe the assessments you used */}
         </div>
 
-        <div className="section " style={{ marginBottom: 0 }}>
+        <div style={{ marginBottom: '2rem' }}>
           <h3>Data Analysis</h3>
           {/* How you analyzed results and adjusted instruction */}
         </div>

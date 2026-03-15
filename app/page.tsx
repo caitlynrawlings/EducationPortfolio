@@ -35,20 +35,20 @@ export default function Home() {
       {/* ── HERO ── */}
       <div className="hero-section">
         <img
-          src="/images/profile.jpg"
+          src="/images/profile.png"
           alt="Profile photo"
           className="profile-photo"
         />
         <div className="hero-text">
           <h1>Caitlyn Rawlings</h1>
-          <p className="hero-subtitle">Student Teacher · High School Mathematics</p>
+          {/* <p className="hero-subtitle">Student Teacher · High School Mathematics</p> */}
           <p className="hero-bio">
             {/* 2-3 sentence bio: who you are, where you're student teaching,
                 what draws you to teaching high school math */}
           </p>
           <div className="contact-row">
             <span>caitlyn.rawlings@gmail.com</span>
-            <span>🔗 <a href="/* linkedin url */">LinkedIn</a></span>
+            <span><a href="/* linkedin url */">LinkedIn</a></span>
           </div>
         </div>
       </div>
