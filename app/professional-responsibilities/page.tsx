@@ -147,16 +147,73 @@ export default function ProfessionalResponsibilities() {
           <h3>PLC Meetings</h3>
 
             <div className="artifact-block">
-              <div className="artifact-meta">PLC Meeting · February 3, 2026</div>
+              <div className="artifact-meta">PLC Meeting · February 13, 2026</div>
               <strong>Agenda:</strong>
               <ul>
-                <li></li>
+                <li>Decide which common formative assessment to bring to 2/17 enrichment day</li>
+                <li>Figure out how many IM workbooks we need to order for next year</li>
+                <li>Data analysis</li>
               </ul>
 
               <strong>Minutes:</strong>
-              
+
+              <p><strong>Attendance</strong></p>
+              <p>Sign-in sheet collected at meeting.</p>
+
+              <br />
+
+              <p><strong>Common Formative Assessment — Enrichment Day 2/17</strong></p>
+              <ul>
+                <li>6th Grade: 6.6 Checkpoint A</li>
+                <li>8th Grade: Scientific Notation Cool Down</li>
+              </ul>
+
+              <br />
+
+              <p><strong>IM Workbooks for Next Year</strong></p>
+              <ul>
+                <li>No workbooks: Mentor Teacher, J.</li>
+                <li>Yes workbooks: J.</li>
+                <li>Maybe workbooks: E., P.</li>
+              </ul>
+
+              <br />
+
+              <p><strong>Spiral Review Documents</strong></p>
+              <ul>
+                <li>8th Grade spiral review doc — shared with team</li>
+                <li>7th Grade spiral review doc — shared with team</li>
+                <li>6th Grade spiral review doc — shared with team</li>
+              </ul>
+
+              <br />
+
+              <p><strong>Data Review</strong></p>
+              <p><em>6th Grade</em></p>
+              <ul>
+                <li>This week: 6.6 Checkpoint A</li>
+              </ul>
+              <p><em>7th Grade</em></p>
+              <ul>
+                <li>This week: 7.5 Mid-Unit Assessment</li>
+              </ul>
+              <p><em>8th Grade</em></p>
+              <ul>
+                <li>This week: N/A</li>
+              </ul>
+
               <div className="callout">
                 <span className="label">My Contributions and Reflections</span>
+                This was near the beginning of my placement, so I was primarily in an observational role during this meeting. 
+                I observed as the team discussed which common formative assessments to bring to the upcoming enrichment day, 
+                which is a all-day professional development day for teachers. This was informative to observe as it showed me 
+                how the team uses common formative assessments as a tool for professional development and collaborative learning, 
+                as well as how they determined which assesments would be most useful for the team to review together during the enrichment day. 
+                I also observed as the team discussed whether or not to order workbooks for next year, which was interesting to see how the 
+                team weighs the pros and cons of different resources and makes decisions together. Certain factors were important to the teachers, 
+                like the grade-level teams being on the same page with what resources to use. The data review portion of the meeting was particularly 
+                useful to observe, as it showed me how the team analyzes student data together, identifies areas of struggle, and uses that 
+                information to inform their instruction moving forward.
               </div>
             </div>
        
@@ -171,6 +228,7 @@ export default function ProfessionalResponsibilities() {
                 <li>Create examplars for upcoming units (if time) </li>
                 <li>Data analysis </li>
               </ul>
+              
               <strong>Minutes:</strong>
 
               <p><strong>Attendance</strong></p>
@@ -261,9 +319,8 @@ export default function ProfessionalResponsibilities() {
                 be on the test and I ensured that our unit review included some practice on that skill. 
               </div>
             </div>
-            
- 
-            <div className="artifact-block">
+
+             <div className="artifact-block">
               <div className="artifact-meta">PLC Meeting · February 3, 2026</div>
               <strong>Agenda:</strong>
               <ul>
@@ -276,13 +333,58 @@ export default function ProfessionalResponsibilities() {
                 <span className="label">My Contributions and Reflections</span>
               </div>
             </div>
+            
+ 
+            
        
        
         </div>
 
         <div>
           <h3>Staff Meetings</h3>
-          {/* Notes from whole-staff meetings */}
+          <div className="artifact-block">
+              <div className="artifact-meta">Staff Meeting · February 3, 2026</div>
+              <strong>Agenda:</strong>
+              <ul>
+                <li>National School Counseling Week</li>
+                <li>Recognizing warning signs</li>
+                <li>Resources for students in crisis</li>
+                <li>Winter I-Ready test scores analysis</li>
+              </ul>
+              <div className="callout">
+                <span className="label">My Reflections</span>
+                This staff meeting deepened my understanding of the whole-child approach to education, 
+                reminding me that student wellbeing directly impacts their ability to learn. The session 
+                on recognizing warning signs and crisis resources was particularly valuable, as it gave 
+                me concrete tools to identify and respond to students who may be struggling beyond the 
+                classroom. Reviewing the Winter I-Ready scores as a staff also reinforced the importance 
+                of using data collaboratively to understand where students are and how to best support 
+                their continued growth.
+              </div>
+            </div>
+
+          <div className="artifact-block">
+              <div className="artifact-meta">Staff Meeting · March 3, 2026</div>
+              <strong>Agenda:</strong>
+              <ul>
+                <li>Formative assesment process</li>
+                <li>Incorperating Claim-Evidence-Reasoning</li>
+                <li>DOK levels and deep thinking</li>
+              </ul>
+
+              <div className="callout">
+                <span className="label">My Reflections</span>
+                This staff meeting strengthened my understanding of how to design 
+                instruction that pushes students toward deeper thinking, particularly through the 
+                frameworks of Claim-Evidence-Reasoning and Depth of Knowledge levels. I found the 
+                reflection on what aspects of the this process we are implementing well and where we can 
+                grow as a team to be particularly useful, as it gave me a clear sense of how the math team 
+                is currently using these frameworks and where there are opportunities for growth. I also 
+                appreciated the discussion of specific strategies for incorporating these frameworks into instruction, 
+                as it gave me concrete ideas to try out in my own practice.
+              </div>
+            </div>
+
         </div>
 
       </div>
@@ -293,7 +395,55 @@ export default function ProfessionalResponsibilities() {
 
         <div style={{ marginBottom: '2rem' }}>
           <h3>Professional Development Day Notes</h3>
-          {/* Your notes and takeaways from the PD day you attended */}
+          <div className="artifact-block">
+            <div className="artifact-meta">Professional Development Day · February 17, 2026</div>
+
+            <p><strong>Facilitator</strong></p>
+            <p>Core Collaborative National Coach</p>
+
+            <br />
+
+            <p><strong>Focus</strong></p>
+            <p>Deepening the Formative Assessment Process</p>
+
+            <br />
+
+            <p><strong>Agenda</strong></p>
+            <ul>
+              <li>Deepening understanding of the formative assessment process</li>
+              <li>Clarifying the purpose and differences between formative and summative assessment</li>
+              <li>Understanding the shift in cognitive demand from elementary to middle school</li>
+              <li>Strengthening Claim–Evidence–Reasoning (CER) instructional strategies</li>
+            </ul>
+
+            <br />
+
+            <p><strong>End-of-Day Product</strong></p>
+            <p>
+              Teams developed a formative assessment incorporating higher DOK levels, 
+              aligned success criteria, and a self and peer assessment plan.
+            </p>
+
+            <div className="callout">
+              <span className="label">My Reflections</span>
+              This professional development day was one of the most directly applicable learning 
+              experiences of my student teaching placement. Working alongside the full teaching 
+              staff deepened my understanding of how 
+              formative assessment, when done intentionally, shifts the classroom dynamic from 
+              teacher-driven evaluation to student-owned learning. The focus on Claim-Evidence-Reasoning 
+              as an instructional strategy was particularly valuable for me as a math teacher, as it 
+              pushed me to think beyond procedural fluency and consider how I can structure tasks that 
+              require students to justify their thinking and engage in genuine mathematical reasoning. 
+              The discussion of Depth of Knowledge levels also gave me a practical framework for 
+              evaluating whether my own questions and assessments are pushing students toward deeper 
+              thinking or keeping them at surface-level recall. By the end of the day I had revised 
+              an existing formative assessment to incorporate higher DOK levels and clearer success 
+              criteria, which I was able to bring directly back into my classroom. This experience 
+              reinforced my belief that professional development is most powerful when it is 
+              immediately actionable, and I left with concrete strategies I am still actively 
+              applying in my teaching practice.
+            </div>
+          </div>
         </div>
 
         <div style={{ marginBottom: '2rem' }}>
@@ -305,9 +455,49 @@ export default function ProfessionalResponsibilities() {
       {/* ── IEP MEETINGS ── */}
       <div className="section " id="iep">
         <h2>IEP & Student Support Meetings</h2>
-        {/* Notes or reflections from IEP meetings you attended —
-            be mindful of student privacy, avoid including names
-            or identifying details */}
+        <p>
+          Participating in student support meetings is a critical part of professional 
+          practice that extends well beyond the classroom. During my student teaching 
+          placement I had the opportunity to attend an IEP eligibility meeting, which 
+          gave me firsthand experience with the collaborative process schools use to 
+          identify and support students with diverse learning needs. In accordance with 
+          student privacy requirements, no identifying information is included below.
+        </p>
+
+        <div className="artifact-block">
+          <div className="artifact-meta">IEP Eligibility Meeting · March 11, 2026</div>
+
+          <p><strong>Meeting Details</strong></p>
+          <p>Attendees: School counselor, student's mother, classroom teachers, principal</p>
+          <p>Purpose: To discuss the possibility of evaluating a student for an IEP or 504 plan</p>
+
+          <br />
+
+          <p><strong>Discussion</strong></p>
+          <ul>
+            <li>Teachers shared observations of the student's academic strengths and areas of difficulty</li>
+            <li>Team discussed whether the student's disability was negatively impacting their academic performance</li>
+            <li>Collaborative discussion between teachers and the student's mother led to the decision to proceed with a formal IEP evaluation</li>
+          </ul>
+
+          <div className="callout">
+            <span className="label">My Reflections</span>
+            Although my role in this meeting was primarily observational, it was an incredibly 
+            valuable experience that deepened my understanding of the collaborative and 
+            student-centered nature of special education support. 
+            I observed how the team came together to discuss the student's needs, 
+            with each member contributing their perspective and expertise. The discussion was 
+            focused on what would best support the student's learning and wellbeing, which 
+            reinforced for me that effective teaching requires a holistic understanding of each 
+            student and a commitment to working collaboratively with families and colleagues to 
+            meet their needs. Because I was familiar with the student's classroom behavior and academic performance 
+            from my own teaching experience, I was able to reflect on how the information shared 
+            in the meeting aligned with my own observations. This experience made me more aware 
+            of the importance of being an active participant in these processes as a future educator, 
+            advocating for my students and collaborating with families and support staff to ensure 
+            all students have access to the resources they need to succeed.
+          </div>
+        </div>
       </div>
 
     </div>
