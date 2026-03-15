@@ -1,65 +1,228 @@
-import Image from "next/image";
+// app/page.tsx
+import Link from 'next/link'
+
+const domains = [
+  {
+    title: 'Planning & Preparation',
+    href: '/planning-and-preparation',
+    icon: '📋',
+    description: 'Lesson plans, differentiated materials, and assessment tools',
+  },
+  {
+    title: 'The Classroom Environment',
+    href: '/the-classroom-environment',
+    icon: '🏫',
+    description: 'Room layout, seating, classroom management, and anchor charts',
+  },
+  {
+    title: 'Instruction',
+    href: '/instruction',
+    icon: '📖',
+    description: 'Student feedback, lesson reflections, and instructional adjustments',
+  },
+  {
+    title: 'Professional Responsibilities',
+    href: '/professional-responsibilities',
+    icon: '🤝',
+    description: 'Communication, collaboration, meetings, and professional development',
+  },
+]
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div>
+
+      {/* ── HERO ── */}
+      <div className="hero-section">
+        <img
+          src="/images/profile.jpg"
+          alt="Profile photo"
+          className="profile-photo"
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+        <div className="hero-text">
+          <h1>Caitlyn Rawlings</h1>
+          <p className="hero-subtitle">Student Teacher · High School Mathematics</p>
+          <p className="hero-bio">
+            {/* 2-3 sentence bio: who you are, where you're student teaching,
+                what draws you to teaching high school math */}
           </p>
+          <div className="contact-row">
+            <span>caitlyn.rawlings@gmail.com</span>
+            <span>🔗 <a href="/* linkedin url */">LinkedIn</a></span>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+      </div>
+
+      {/* ── TEACHING PHILOSOPHY ── */}
+      <div className="section ">
+        <h2>Teaching Philosophy</h2>
+        <p>
+          {/* Paste your teaching philosophy statement here */}
+        </p>
+      </div>
+
+
+      {/* ── RESUME ── */}
+      <div className="section">
+        <div className="resume-header-row">
+          <h2>Resume</h2>
+          <a href="/resume.pdf" download className="download-btn">
+            Download PDF
           </a>
         </div>
-      </main>
+
+        {/* PROFESSIONAL PROFILE */}
+        <div className="resume-section">
+          <h3>Professional Profile</h3>
+          <div className="resume-item">
+            <p>
+              Passionate mathematics educator currently completing student teaching in 7th grade
+              math and pre-algebra, committed to making mathematics accessible, engaging, and
+              meaningful for all learners. Brings a strong foundation in working with diverse
+              students through K-12 substitute teaching, high school tutoring, and a
+              collegiate-level teacher assistant role, with a consistent focus on supporting
+              struggling learners while maintaining high expectations. Skilled at breaking down
+              complex concepts and fostering a classroom culture where students feel safe to take
+              risks and grow. Eager to bring energy, organization, and a genuine passion for
+              student success to a full-time mathematics teaching position.
+            </p>
+          </div>
+        </div>
+
+        {/* EDUCATION */}
+        <div className="resume-section">
+          <h3>Education</h3>
+
+          <div className="resume-item">
+            <div className="resume-item-header">
+              <strong>Master of Arts in Teaching — Mathematics Education (Secondary)</strong>
+              <span className="resume-date">Anticipated May 2026</span>
+            </div>
+            <p className="resume-institution">Western Governors University · Kent, WA</p>
+            <p style={{ fontSize: '0.88rem', color: 'var(--muted)', marginBottom: '0.4rem' }}>
+              Relevant Coursework
+            </p>
+            <ul>
+              <li>Practices for Inclusive Classrooms — designing equitable learning environments that support diverse learners</li>
+              <li>Curriculum & Instructional Strategies for Meaningful Learning — developing standards-aligned lessons using research-based instructional strategies</li>
+              <li>Monitoring Student Learning Through Assessment — integrating formative and summative assessments to drive reflection, goal setting, and instructional adjustment</li>
+            </ul>
+          </div>
+
+          <div className="resume-item">
+            <div className="resume-item-header">
+              <strong>Bachelor of Science in Computer Science</strong>
+              <span className="resume-date">September 2022 – December 2024</span>
+            </div>
+            <p className="resume-institution">University of Washington · Seattle, WA</p>
+            <p style={{ fontSize: '0.88rem', color: 'var(--muted)', marginBottom: '0.4rem' }}>
+              Relevant Coursework
+            </p>
+            <ul>
+              <li>Linear Algebra</li>
+              <li>Foundations of Computing I (Discrete Mathematics)</li>
+              <li>Foundations of Computing II (Probability & Statistics)</li>
+            </ul>
+          </div>
+
+        </div>
+
+        {/* CERTIFICATIONS */}
+        <div className="resume-section">
+          <h3>Certifications & Licenses</h3>
+
+          <div className="resume-item">
+            <div className="resume-item-header">
+              <strong>Washington State Teaching Certificate</strong>
+              <span className="resume-date">Anticipated May 2026</span>
+            </div>
+            <ul>
+              <li>Mathematics Endorsement (NES 304 — Score: 286/300)</li>
+              <li>Computer Science Endorsement (NES 315 — Score: 287/300)</li>
+            </ul>
+          </div>
+
+        </div>
+
+        {/* TEACHING EXPERIENCE */}
+        <div className="resume-section">
+          <h3>Teaching Experience</h3>
+
+          <div className="resume-item">
+            <div className="resume-item-header">
+              <strong>Middle School Mathematics Student Teacher</strong>
+              <span className="resume-date">January 2026 – Present</span>
+            </div>
+            <p className="resume-institution">Orting Middle School · Orting, WA</p>
+            <ul>
+              <li>Deliver daily instruction in 7th grade math and pre-algebra across multiple sections, designing lessons aligned to Washington state standards</li>
+              <li>Develop differentiated materials addressing content, process, and product to meet the needs of diverse learners including students with IEPs</li>
+              <li>Design and administer formative and summative assessments, analyzing student data to adjust instruction and inform small group support</li>
+              <li>Maintain a structured, high-expectation classroom environment through consistent routines, a weekly seating rotation, and a clear behavior escalation plan</li>
+              <li>Collaborate with mentor teacher, PLC team, and math department to align instruction and support student growth</li>
+              <li>Communicate regularly with families through ParentSquare unit updates and individual emails regarding student progress and behavior</li>
+            </ul>
+          </div>
+
+          <div className="resume-item">
+            <div className="resume-item-header">
+              <strong>Emergency Substitute Teacher</strong>
+              <span className="resume-date">March 2025 – Present</span>
+            </div>
+            <p className="resume-institution">Franklin Pierce School District · Tacoma, WA</p>
+            <ul>
+              <li>Foster a disciplined, safe, and positive learning atmosphere by managing student behavior and enforcing school policies</li>
+              <li>Adapt teaching methods across various grade levels and subject areas to meet diverse learning styles and student needs</li>
+            </ul>
+          </div>
+
+          <div className="resume-item">
+            <div className="resume-item-header">
+              <strong>Teaching Assistant — Data Science</strong>
+              <span className="resume-date">February 2024 – December 2024</span>
+            </div>
+            <p className="resume-institution">InventXYZ · Seattle, WA</p>
+            <ul>
+              <li>Worked with over 200 high school students to build knowledge in data science through analyzing and creating data visualizations using Tableau</li>
+              <li>Guided students from meeting less than 50% of assignment requirements to meeting 100% through targeted feedback and support</li>
+            </ul>
+          </div>
+
+          <div className="resume-item">
+            <div className="resume-item-header">
+              <strong>Teaching Assistant — Introduction to Digital Design</strong>
+              <span className="resume-date">March 2023 – March 2024</span>
+            </div>
+            <p className="resume-institution">UW Department of Computer Science · Seattle, WA</p>
+            <ul>
+              <li>Mentored over 120 students in Introduction to Digital Design, explaining challenging concepts and assisting with debugging SystemVerilog code and troubleshooting hardware and software problems</li>
+              <li>Coordinated office hours with 4 teaching assistants to ensure widespread availability and timely return of assessments</li>
+            </ul>
+          </div>
+
+        </div>
+
+        {/* ADDITIONAL EXPERIENCE */}
+        <div className="resume-section">
+          <h3>Additional Experience</h3>
+
+          <div className="resume-item">
+            <div className="resume-item-header">
+              <strong>Director of Collaboration — Residential Programming Board</strong>
+              <span className="resume-date">September 2023 – June 2024</span>
+            </div>
+            <p className="resume-institution">University of Washington · Seattle, WA</p>
+            <ul>
+              <li>Coordinated large-scale events requiring extensive planning, communication, and organization, with attendance of up to 2,000 people</li>
+              <li>Fostered collaboration between team and over 30 on-campus and off-campus entities</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+      {/* end resume */}
+
     </div>
-  );
+  )
 }
