@@ -9,7 +9,7 @@ export default function Instruction() {
       </div>
 
       {/* ── WRITTEN FEEDBACK ON STUDENT WORK ── */}
-      <div className="section ">
+      <div className="section " id="written-feedback">
         <h2>Written Feedback on Student Work</h2>
         {/* Add photos or scans of marked student work here
             Consider showing before/after if you have it, or 
@@ -17,7 +17,7 @@ export default function Instruction() {
       </div>
 
       {/* ── PERSONAL REFLECTIONS ── */}
-      <div className="section ">
+      <div className="section " id="personal-reflections">
         <h2>Personal Lesson Reflections</h2>
 
         <div style={{ marginBottom: '2rem' }}>
@@ -34,7 +34,7 @@ export default function Instruction() {
       </div>
 
       {/* ── RESPONDING TO FEEDBACK RECEIVED ── */}
-      <div className="section ">
+      <div className="section " id="responding-to-feedback">
         <h2>Responding to Feedback</h2>
 
         <div style={{ marginBottom: '2rem' }}>

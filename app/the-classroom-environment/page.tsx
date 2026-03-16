@@ -9,14 +9,14 @@ export default function TheClassroomEnvironment() {
       </div>
 
       {/* ── ROOM LAYOUT ── */}
-      <div className="section ">
+      <div className="section " id="room-layout">
         <h2>Room Layout & Table Arrangements</h2>
         {/* Add your blueprint/diagram image here */}
         {/* <img src="/images/room-layout.png" alt="Room layout blueprint" /> */}
       </div>
 
       {/* ── SEATING CHART ── */}
-      <div className="section ">
+      <div className="section " id="seating-chart">
         <h2>Seating Chart</h2>
 
         <div style={{ marginBottom: '2rem' }}>
@@ -32,7 +32,7 @@ export default function TheClassroomEnvironment() {
       </div>
 
       {/* ── CLASSROOM MANAGEMENT ── */}
-      <div className="section ">
+      <div className="section " id="classroom-management">
         <h2>Classroom Management</h2>
 
         <div style={{ marginBottom: '2rem' }}>
@@ -44,7 +44,7 @@ export default function TheClassroomEnvironment() {
       </div>
 
       {/* ── ANCHOR CHARTS ── */}
-      <div className="section ">
+      <div className="section " id="anchor-charts">
         <h2>Anchor Charts</h2>
         {/* Add photos of your anchor charts here */}
         {/* Use a grid layout — example:
