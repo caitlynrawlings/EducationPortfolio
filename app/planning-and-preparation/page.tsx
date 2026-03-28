@@ -1,5 +1,7 @@
 // app/planning-and-preparation/page.tsx
 
+import CooldownChart from '../components/CoolDownChart'
+import CooldownRubric from '../components/CoolDownRubric'
 import Gallery from '../components/Gallery'
 
 
@@ -14,7 +16,28 @@ export default function PlanningAndPreparation() {
       {/* ── LESSON PLANS ── */}
       <div className="section " id="lesson-plans">
         <h2>Lesson Plans</h2>
-        {/* Add your lesson plan content here */}
+        <p className="blurb">
+          The following lesson plans were designed and taught during my student teaching 
+          placement. Each plan reflects my approach to direct instruction — chunking content 
+          into manageable parts, incorporating both formative and summative assessment, 
+          and building in supports for diverse learners. Both plans follow a warm-up, 
+          direct instruction, practice, and exit ticket structure that provides consistency 
+          for students while allowing flexibility in how content is delivered.
+        </p>
+
+        <div className="artifact-block">
+          <div className="artifact-meta">Direct Instruction Lesson Plan · February 2026</div>
+          <Gallery slides={[
+            { images: ['/images/lessonPlans/LessonPlan2-1.png', '/images/lessonPlans/LessonPlan2-2.png', '/images/lessonPlans/LessonPlan2-3.png'], caption: 'Rational vs. Irrational Numbers - 8th Grade Math' },
+          ]} />
+        </div>
+
+        <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
+          <div className="artifact-meta">Direct Instruction Lesson Plan · March 2026</div>
+          <Gallery slides={[
+            { images: ['/images/lessonPlans/LessonPlan1-1.png', '/images/lessonPlans/LessonPlan1-2.png', '/images/lessonPlans/LessonPlan1-3.png'], caption: 'Angle Relationships - 7th Grade Math' },
+          ]} />
+        </div>
       </div>
 
       {/* ── DIFFERENTIATED MATERIALS ── */}
@@ -87,9 +110,9 @@ export default function PlanningAndPreparation() {
       Students completed the following self-assessment to identify which skills 
       they wanted to focus their practice time on.
     </p>
-    <div className="slideshow-image-wrap" style={{ cursor: 'default', marginTop: '0.75rem' }}>
-      <img src="/images/scientificNotation/9803696c-1.png" alt="Student self-assessment — Scientific Notation" />
-    </div>
+    <Gallery slides={[
+      { images: ['/images/scientificNotation/9803696c-1.png'], caption: 'Student self-assessment — Scientific Notation' }
+    ]} />
 
   <br />
 
@@ -154,8 +177,8 @@ export default function PlanningAndPreparation() {
 
         <div style={{ marginBottom: '2rem' }}>
           <h3>Product</h3>
-          <p>
-            While the school context limited summative assessment formats to traditional tests, 
+          <p className='blurb'>
+            While he math department I was doing my student teaching placement in limited summative assessment formats to traditional tests, 
             I varied the ways students demonstrated their formative understanding throughout 
             each unit by intentionally selecting different assessment formats based on the 
             nature of the lesson and learning objective. These included exit tickets, digital 
@@ -164,21 +187,141 @@ export default function PlanningAndPreparation() {
             multiple windows into student thinking across different types of tasks.
           </p>
         </div>
-      </div>
+
 
       {/* ── ASSESSMENT TOOLS & DATA ANALYSIS ── */}
-      <div className="section " id="assessment-tools-and-data-analysis">
+      <div className="section " id="assessment-tools">
         <h2>Assessment Tools & Data Analysis</h2>
 
         <div style={{ marginBottom: '2rem' }}>
           <h3>Assessment Tools</h3>
-          {/* Describe the assessments you used */}
+          <p className='blurb'>
+            Assesment tools I used range from quick formative checks like digital polls and exit tickets to more formal summative assessments. 
+            The summative assessments I used were uniform across the math department and were in traditional test formats, but I used a variety of 
+            formative assessment tools to gauge student understanding throughout each unit. These included digital polls, which allowed for 
+            anonymous participation and real-time feedback during lessons, and exit tickets, which provided a quick snapshot of student understanding 
+            at the end of class. By using multiple formats for formative assessment, I was able to capture a more complete picture of student learning 
+            and adjust my instruction accordingly.
+          </p>
+          <div className="artifact-block">
+              <div className="artifact-meta">Live Polls · February 2026</div>
+              <p>These polls were put incorperated into slides during a lesson on irrational numbers. This provided as anonymous 
+                way for students to participate in class and demonstrate their understanding.</p>
+              <Gallery slides={[
+                { images: ['/images/pollEv/Screenshot 2026-03-16 075009.png'], caption: 'Poll 1' },
+                { images: ['/images/pollEv/Screenshot 2026-03-16 075027.png'], caption: 'Poll 2' },
+                { images: ['/images/pollEv/Screenshot 2026-03-16 075044.png'], caption: 'Poll 3' },
+                { images: ['/images/pollEv/Screenshot 2026-03-16 075059.png'], caption: 'Poll 4' },
+                { images: ['/images/pollEv/Screenshot 2026-03-16 075118.png'], caption: 'Poll 5' },
+                { images: ['/images/pollEv/Screenshot 2026-03-16 075131.png'], caption: 'Poll 6' },
+                { images: ['/images/pollEv/Screenshot 2026-03-16 075144.png'], caption: 'Poll 7' },
+                { images: ['/images/pollEv/Screenshot 2026-03-16 075154.png'], caption: 'Poll 8' },
+                { images: ['/images/pollEv/Screenshot 2026-03-16 075209.png'], caption: 'Poll 9' },
+                { images: ['/images/pollEv/Screenshot 2026-03-16 075219.png'], caption: 'Poll 10' },
+                { images: ['/images/pollEv/Screenshot 2026-03-16 075229.png'], caption: 'Poll 11' },
+                { images: ['/images/pollEv/Screenshot 2026-03-16 075244.png'], caption: 'Poll 12' },
+                { images: ['/images/pollEv/Screenshot 2026-03-16 075254.png'], caption: 'Poll 13' },
+              ]} />
+              <p>
+              The answered poll questions can be seen  
+              can be found in the <a href="instruction#written-feedback">????</a> domain.
+              Disscussion of how I used the data to inform my instruction can be found in the <a href="#assessment-tools-and-data-analysis">????</a> section below.
+            </p>
+          </div>
+
+          <div className="artifact-block">
+              <div className="artifact-meta">Exit Tickets · February and March 2026</div>
+            <p>Another way to assess student understanding was through exit tickets. I used a mix of digital and physical exit tickets as tools  students at the end of each lesson.</p>
+
+              <Gallery slides={[
+                { images: ['/images/exitTickets/498faf0b-1.png'], caption: 'Physical Exit Ticket' },
+                { images: 
+                  [
+                    '/images/exitTickets/Screenshot 2026-03-16 081822.png',
+                    '/images/exitTickets/Screenshot 2026-03-16 081831.png',
+                    '/images/exitTickets/Screenshot 2026-03-16 081839.png',
+                  ], 
+                  caption: 'Digital Exit Ticket - Google Form' },
+              ]} />
+              <p>
+              How I analyzed the data can be found in the <a href="/instruction#written-feedback">??????</a> domain.
+            </p>
+          </div>
+      </div>
+
+      <div style={{ marginBottom: '2rem' }}>
+          <h3>Data Analysis</h3>
+          <p className='blurb'>
+            I use both formative and summative assessment data to identify patterns in student understanding and inform my instructional decisions. 
+            Below is an example of how I analyzed data from a formative cool down assessment to identify common misconceptions and target areas for 
+            re-teaching in subsequent lessons. And a summative assesment data analysis that 
+          </p>
+
+          <div className="artifact-block">
+              <div className="artifact-meta">Formative Assesment · February 2026</div>
+
+              <p>
+                The following cool down was administered at the end of a lesson on converting 
+                between standard and scientific notation. Cool downs were used regularly in my 
+                classes as a brief formative assessment tool to gauge student understanding before 
+                the next lesson. The scored results and analysis below reflect one administration 
+                of this assessment.
+              </p>
+
+              <Gallery slides={[
+                { images: ['/images/exitTickets/d5c5e674-1.png'], caption: 'Physical Exit Ticket' }
+              ]} />
+              <CooldownRubric/>
+              <CooldownChart/>
+              <p style={{ marginTop: '1.5rem' }}>
+              Analysis of the cool down data revealed a clear difference in student performance 
+              across the two conversion directions. Students demonstrated strong proficiency in 
+              converting from standard form to scientific notation, with the majority scoring 
+              at or near full marks on Question 1. However, approximately one third of students 
+              struggled with the reverse process — converting from scientific notation to standard 
+              form — suggesting that while students could produce scientific notation, interpreting 
+              and reversing the process was less secure.
+              <br /><br />
+              Examining student work revealed two common error patterns on Question 2. The most 
+              frequent mistake was adding zeros rather than moving the decimal point — for example, 
+              interpreting 4.5 × 10<sup>3</sup> as 4500 by appending three zeros rather than 
+              understanding it as a shift in place value. The second common error was moving the 
+              decimal in the wrong direction, indicating confusion about the relationship between 
+              the sign of the exponent and whether the resulting number should be larger or smaller. 
+              Both errors point to a gap in conceptual understanding of what the exponent represents 
+              in terms of the size and structure of the number.
+              <br /><br />
+              While I did not design a formal re-teaching lesson in response to this data, I 
+              addressed these misconceptions directly in subsequent lessons by revisiting the 
+              conceptual reasoning behind decimal movement when they naturally arose. This experience 
+              reinforced for me the importance of building dedicated time for data review into my 
+              planning process so that patterns like these can be responded to more systematically 
+              in future practice.
+            </p>
+            
+              <p style={{ marginTop: '1.5rem' }}>
+                The following student work samples illustrate the range of responses on the cool down, 
+                including examples of the two most common misconceptions identified in the data analysis above.
+                All identifying information has been removed.
+              </p>
+
+              <Gallery slides={[
+                { images: ['/images/analysis/IMG_9623.png'], caption: 'Score 4 — Correct conversion in both directions' },
+                { images: ['/images/analysis/IMG_9624.png'], caption: 'Common error — Decimal moved in the wrong direction' },
+                { images: ['/images/analysis/IMG_9625.png'], caption: 'Common error — Appending zeros rather than moving the decimal' },
+              ]} />
+
+            
+          </div>
         </div>
 
-        <div style={{ marginBottom: '2rem' }}>
-          <h3>Data Analysis</h3>
-          {/* How you analyzed results and adjusted instruction */}
+        <div className="artifact-block">
+          <div className="artifact-meta">Summative Assesment · March 2026</div>
+          
         </div>
+        
+      </div>
+          
       </div>
 
     </div>

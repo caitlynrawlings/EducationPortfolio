@@ -34,11 +34,11 @@ export default function Home() {
 
       {/* ── HERO ── */}
       <div className="hero-section">
-        <img
+        {/* <img
           src="/images/profile.png"
           alt="Profile photo"
           className="profile-photo"
-        />
+        /> */}
         <div className="hero-text">
           <h1>Caitlyn Rawlings</h1>
           {/* <p className="hero-subtitle">Student Teacher · High School Mathematics</p> */}
@@ -137,8 +137,8 @@ export default function Home() {
               <span className="resume-date">Anticipated May 2026</span>
             </div>
             <ul>
-              <li>Mathematics Endorsement (NES 304 — Score: 286/300)</li>
-              <li>Computer Science Endorsement (NES 315 — Score: 287/300)</li>
+              <li>Mathematics Endorsement</li>
+              <li>Computer Science Endorsement</li>
             </ul>
           </div>
 

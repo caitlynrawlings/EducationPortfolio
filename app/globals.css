@@ -16,8 +16,6 @@ body {
   min-height: 100vh;
 }
 
-
-
 /* nav {
   display: flex;
   gap: 0.25rem;
@@ -672,7 +670,6 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 0.75rem;
-  border-bottom: 1px solid var(--border);
 }
 
 .slideshow-inner {
@@ -694,6 +691,7 @@ header {
   padding: 1.5rem;
   position: relative;
   transition: background 0.2s;
+  gap: 0.5rem;
 }
 
 /* .slideshow-image-wrap:hover {
@@ -723,6 +721,7 @@ p.slideshow-caption {
   font-size: 0.85rem;
   color: var(--muted);
   text-align: center;
+  margin-top: 0.5rem;
 }
 
 .slideshow-counter {
@@ -895,4 +894,156 @@ p.slideshow-caption {
 .lightbox-scroll::-webkit-scrollbar-thumb {
   background: var(--border);
   border-radius: 2px;
+}
+
+/* ── COOLDOWN CHART ── */
+.cooldown-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 2rem;
+}
+
+.cooldown-metric {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cooldown-metric-label {
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cooldown-metric-value {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: var(--foreground);
+}
+
+.cooldown-metric-sub {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.cooldown-legend {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  flex-wrap: wrap;
+}
+
+.cooldown-legend span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cooldown-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.cooldown-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.cooldown-table th {
+  text-align: left;
+  padding: 6px 12px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--border);
+  font-weight: normal;
+}
+
+.cooldown-table td {
+  padding: 6px 12px;
+  border-bottom: 0.5px solid var(--border);
+  text-align: center;
+}
+
+.cooldown-table td:first-child {
+  text-align: left;
+}
+
+/* ── RUBRIC ── */
+.rubric-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.rubric-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.rubric-title {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: var(--foreground);
+  margin: 0;
+}
+
+.rubric-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.rubric-table th {
+  text-align: left;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+  font-weight: normal;
+}
+
+.rubric-table td {
+  padding: 8px 12px;
+  border-bottom: 0.5px solid var(--border);
+  line-height: 1.6;
+  color: var(--foreground);
+}
+
+.rubric-table tr:last-child td {
+  border-bottom: none;
+}
+
+.rubric-score {
+  font-weight: bold;
+  width: 60px;
+  color: var(--muted);
+}
+
+.rubric-score-correct {
+  color: #3b6d11;
+}
+
+.slideshow-btn-placeholder {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
 }

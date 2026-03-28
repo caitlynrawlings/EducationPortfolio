@@ -319,7 +319,7 @@ export default function ProfessionalResponsibilities() {
                 be on the test and I ensured that our unit review included some practice on that skill. 
               </div>
             </div>
-
+{/* 
              <div className="artifact-block">
               <div className="artifact-meta">PLC Meeting · February 3, 2026</div>
               <strong>Agenda:</strong>
@@ -332,7 +332,7 @@ export default function ProfessionalResponsibilities() {
               <div className="callout">
                 <span className="label">My Contributions and Reflections</span>
               </div>
-            </div>
+            </div> */}
             
  
             
@@ -385,6 +385,28 @@ export default function ProfessionalResponsibilities() {
               </div>
             </div>
 
+            <div className="artifact-block">
+              <div className="artifact-meta">Staff Meeting · March 19, 2026</div>
+              <strong>Agenda:</strong>
+              <ul>
+                <li>Family communication</li>
+                <li>OMS Instructional Vision</li>
+                <li>High levels of learning - students understanding the why</li>
+              </ul>
+
+              <div className="callout">
+                <span className="label">My Reflections</span>
+                This staff meeting prompted me to reflect on how I communicate the relevance 
+                of content to my students and help them understand the purpose behind what we 
+                are doing in class. Although I had already been working to incorporate this into 
+                my lessons, this discussion gave me a clearer framework for thinking about it more 
+                intentionally and consistently. The conversation reinforced that students who 
+                understand the why behind their learning are more likely to be engaged and invested. 
+                I want to be more deliberate about building into my lesson openings 
+                and closings going forward.
+              </div>
+            </div>
+
         </div>
 
       </div>
@@ -394,7 +416,7 @@ export default function ProfessionalResponsibilities() {
         <h2>Professional Development</h2>
 
         <div style={{ marginBottom: '2rem' }}>
-          <h3>Professional Development Day Notes</h3>
+          {/* <h3>Professional Development Day Notes</h3> */}
           <div className="artifact-block">
             <div className="artifact-meta">Professional Development Day · February 17, 2026</div>
 
@@ -446,11 +468,11 @@ export default function ProfessionalResponsibilities() {
           </div>
         </div>
 
-        <div style={{ marginBottom: '2rem' }}>
+        {/* <div style={{ marginBottom: '2rem' }}>
           <h3>Professional Development Certificates</h3>
-          {/* Upload or display any certificates earned */}
-        </div>
-      </div>
+          {/* Upload or display any certificates earned 
+        </div> */}
+      </div> 
 
       {/* ── IEP MEETINGS ── */}
       <div className="section " id="iep">

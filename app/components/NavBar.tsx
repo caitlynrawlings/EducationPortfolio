@@ -19,7 +19,6 @@ const nav = [
       { label: 'Room Layout', id: 'room-layout' },
       { label: 'Seating Chart', id: 'seating-chart' },
       { label: 'Classroom Management', id: 'classroom-management' },
-      { label: 'Anchor Charts', id: 'anchor-charts' },
     ],
   },
   {
