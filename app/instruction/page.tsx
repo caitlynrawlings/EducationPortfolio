@@ -1,5 +1,7 @@
 // app/instruction/page.tsx
 
+import Gallery from "../components/Gallery";
+
 export default function Instruction() {
   return (
     <div>
@@ -8,46 +10,379 @@ export default function Instruction() {
         <p>Demonstrating responsive, reflective, and feedback-driven teaching practice</p>
       </div>
 
-      {/* ── WRITTEN FEEDBACK ON STUDENT WORK ── */}
-      <div className="section " id="written-feedback">
-        <h2>Written Feedback on Student Work</h2>
-        {/* Add photos or scans of marked student work here
-            Consider showing before/after if you have it, or 
-            a range across ability levels to show differentiated feedback */}
+      
+    {/* ── WRITTEN FEEDBACK ON STUDENT WORK ── */}
+    <div className="section" id="written-feedback">
+      <h2>Written Feedback on Student Work</h2>
+      <p className="blurb">
+        Providing timely and meaningful written feedback is essential to helping students 
+        learn from their mistakes rather than simply receiving a grade. At my placement 
+        school, the standard practice for math tests was to return assessments with 
+        teacher markings indicating what was correct, give students one class period to 
+        review their work, and then collect the tests for a final grade. For the assessment 
+        shown below, my mentor teacher and I made the collaborative decision to offer two 
+        rounds of revision opportunities given the difficulty of the test — we wanted 
+        students to have multiple chances to engage with their errors and demonstrate 
+        growth. In all of the following examples, orange markings reflect feedback from 
+        the first round and purple markings reflect the second and final round.
+      </p>
+
+      <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
+        <div className="artifact-meta">Written Feedback on Student Work · Unit 6 Assessment · March 2026</div>
+
+        <Gallery slides={[
+          { images: ['/images/writtenFeedback/correctedExplanation.png'], caption: 'Example 1 — Prompting student reasoning' },
+        ]} />
+        <p>
+          In this example, rather than simply marking the answer as incorrect, I prompted 
+          the student to explain why the step they identified was wrong. The student had 
+          correctly located the error in the sample work but had not yet articulated what 
+          went wrong mathematically. My feedback encouraged them to go further — and in 
+          their revision, the student was able to explain the mistake using vocabulary from 
+          the unit, specifically identifying that like terms had been combined incorrectly. 
+          This exchange illustrated the value of feedback that pushes students to reason 
+          rather than just correct.
+        </p>
+
+        <Gallery slides={[
+          { images: ['/images/writtenFeedback/missingInequality.png'], caption: 'Example 2 — Identifying a missing component' },
+        ]} />
+        <p>
+          In this example I acknowledged the steps the student had completed correctly 
+          before directing their attention to two specific issues — an arithmetic error 
+          in their work and a missing inequality symbol in their final answer. I noted 
+          that even if the arithmetic had been correct, the absence of the inequality 
+          symbol would have made the answer incomplete. While the student did respond 
+          to the feedback by adding an inequality symbol in their revision, they chose 
+          the wrong symbol and did not revisit the arithmetic error. This was a useful 
+          reminder that written feedback does not always lead to full correction — 
+          students sometimes engage with only part of the feedback given, which points 
+          to the importance of also building in time to discuss common errors whole-class 
+          rather than relying solely on individual written comments.
+        </p>
       </div>
 
-      {/* ── PERSONAL REFLECTIONS ── */}
-      <div className="section " id="personal-reflections">
-        <h2>Personal Lesson Reflections</h2>
+    </div>
 
-        <div style={{ marginBottom: '2rem' }}>
-          <h3>Reflection</h3>
-          {/* Your written reflections on specific lessons —
-              what went well, what didn't, what you noticed */}
-        </div>
+     {/* ── PERSONAL REFLECTIONS ── */}
+    <div className="section" id="personal-reflections">
+      <h2>Personal Lesson Reflections</h2>
+      <p className="blurb">
+        Reflective practice is one of the most important habits a teacher can develop. 
+        Throughout my student teaching placement I kept a running log of observations, 
+        challenges, and adjustments across my lessons. The following entries highlight 
+        key moments of growth across five areas of my developing practice: adjusting 
+        lesson difficulty, cold calling strategies, in-the-moment differentiation, 
+        classroom management, and pivoting when a lesson wasn't working.
+      </p>
 
-        <div style={{ marginBottom: '2rem' }}>
-          <h3>Adjustments Made</h3>
-          {/* Concrete changes you made to subsequent lessons
-              based on your own reflections */}
-        </div>
+      {/* ADJUSTING DIFFICULTY */}
+      <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
+        <div className="artifact-meta gap-1">Reflection · Adjusting Lesson Difficulty Based on Student Performance</div>
+
+        <p><strong>What Happened</strong></p>
+        <p>
+          Early in my placement I struggled with calibrating the difficulty level of 
+          the practice problems I wrote. After my mentor teacher was absent on 2/2, 
+          I reflected that the problems I had written for the 8th graders were too 
+          hard — students were frustrated and the lesson lost momentum. This pattern 
+          repeated on 2/3, where I noted again that the challenge problems I wrote 
+          were too difficult for where students were.
+        </p>
+
+        <p><strong>My Reflection</strong></p>
+        <p>
+          I realized I was writing problems at a level I found interesting rather than 
+          at a level appropriate for where students were in their understanding. Writing 
+          good practice problems requires knowing not just the content but the specific 
+          entry points and common struggle points of your students — something that takes 
+          time and observation to develop. I also recognized that problems that are too 
+          hard can be more damaging than problems that are too easy, because frustration 
+          shuts down engagement entirely.
+        </p>
+
+        <p><strong>What I Did Differently</strong></p>
+        <p>
+          By 3/3 I noted that I felt good about the difficulty level of the practice 
+          problems I had put together, referencing other notes on the same subject to 
+          calibrate appropriately and then taking difficulty up only one step at a time. 
+          I also became more intentional about building in easier entry problems at the 
+          start of a practice set so students could build confidence before reaching 
+          harder material. By 3/18 I was able to reflect that I had done better with 
+          appropriate difficulty level, noting that I still included a couple of harder 
+          problems but in a more balanced way.
+        </p>
       </div>
+
+      {/* COLD CALLING */}
+      <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
+        <div className="artifact-meta">Reflection · Developing Cold Calling Strategies</div>
+
+        <p><strong>What Happened</strong></p>
+        <p>
+          On 2/13 I reflected on a challenge I was having with cold calling — specifically, 
+          what to do when a student gets an answer wrong. I was worried about students 
+          feeling embarrassed or shut down in front of their peers, which was making me 
+          hesitant to use cold calling effectively as a discussion tool.
+        </p>
+
+        <p><strong>My Reflection</strong></p>
+        <p>
+          I recognized that the discomfort I felt was getting in the way of using cold 
+          calling as the powerful formative tool it can be. The issue wasn't cold calling 
+          itself — it was that I hadn't established clear language and norms around mistakes 
+          being a normal and valued part of the learning process. Without that foundation, 
+          students had no framework for how to respond when they didn't know the answer.
+        </p>
+
+        <p><strong>What I Did Differently</strong></p>
+        <p>
+          I developed specific language to use when students struggled during cold calling:
+        </p>
+        <ul>
+          <li>"Part of math is being able to express your ideas and thinking."</li>
+          <li>"If you don't know the answer that is fine, but then I need you to explain where you are stuck or what you are confused by."</li>
+          <li>"You are not the only one who is confused and we can all learn from each other's questions."</li>
+        </ul>
+        <p>
+          This reframe shifted cold calling from a performance moment to a thinking moment, 
+          reducing the stakes for students who didn't have the right answer while still 
+          holding them accountable for engaging with the content.
+        </p>
+      </div>
+
+      {/* IN-THE-MOMENT DIFFERENTIATION */}
+      <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
+        <div className="artifact-meta">Reflection · Differentiating Instruction in the Moment</div>
+
+        <p><strong>What Happened</strong></p>
+        <p>
+          On 2/20 I attempted an in-the-moment differentiation strategy during 8th grade 
+          scientific notation practice. After a diagnostic warm-up, the plan was for students 
+          who did well to choose an independent activity while students who struggled would 
+          move into groups to work together on the specific skill they needed. In practice, 
+          students ended up staying where they were rather than moving into the intended groups.
+        </p>
+
+        <p><strong>My Reflection</strong></p>
+        <p>
+          The differentiation intent was sound but the logistics weren't tight enough. 
+          Moving students mid-class into new groups based on diagnostic results requires 
+          clear procedures and student buy-in that I hadn't fully established. The good 
+          news was that students still ended up working on the skill they needed — the 
+          differentiation happened in content even if not in grouping. I also reflected 
+          on a similar activity for 7th graders that same day — a progressive three-level 
+          practice set — which I liked conceptually but found challenging to manage because 
+          many students came up to have their work checked at the same time.
+        </p>
+
+        <p><strong>What I Did Differently</strong></p>
+        <p>
+          These experiences informed the self-assessment differentiation lesson I designed 
+          for scientific notation, where students identified their own areas of difficulty 
+          and selected targeted practice rather than being assigned to groups by the teacher. 
+          This approach achieved the same differentiation goal while removing the logistical 
+          challenge of physically moving students mid-lesson and giving students more agency 
+          over their own learning.
+        </p>
+      </div>
+
+      {/* CLASSROOM MANAGEMENT */}
+      <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
+        <div className="artifact-meta">Reflection · Improving Classroom Management Over Time</div>
+
+        <p><strong>What Happened</strong></p>
+        <p>
+          Classroom management was one of my biggest areas of growth during my placement. 
+          Early on — particularly on 2/2 when my mentor teacher was absent — I reflected 
+          directly that my classroom management wasn't great. Throughout the placement I 
+          encountered a range of behavioral challenges, particularly in 6th period, including 
+          persistent off-task behavior, students arguing during activities, and disruptions 
+          that made it difficult to maintain instructional momentum.
+        </p>
+
+        <p><strong>My Reflection</strong></p>
+        <p>
+          Managing a classroom is something that develops through experience and honest 
+          self-assessment. I found that I was sometimes hesitant to intervene quickly 
+          enough, and that I hadn't always established clear enough expectations around 
+          specific activities — for example, during the jeopardy review on 3/6 students 
+          were guessing rather than doing math, which I hadn't anticipated or built 
+          structures to prevent. I also learned through conversations with my mentor 
+          teacher about the importance of understanding individual student needs — including 
+          students who may have undiagnosed conditions — and adapting my approach accordingly, 
+          such as offering choices rather than directives for students who respond better 
+          to autonomy.
+        </p>
+
+        <p><strong>What I Did Differently</strong></p>
+        <p>
+          Over time I became more consistent with proactive strategies like positive praise 
+          and proximity, and more deliberate about building clear expectations into activities 
+          before they began. After the jeopardy activity struggled in 2nd period on 3/6, 
+          I adjusted for 6th period by using easier, quicker problems and requiring visible 
+          math on desks to reduce guessing — and it went better. I also introduced a bell 
+          signal on 3/18 to get student attention more efficiently, and while I noted I 
+          needed to make expectations around the bell clearer, it was a step toward more 
+          consistent attention management. Sending home both positive and behavior concern 
+          emails for 6th period was another deliberate strategy to enlist family support 
+          and reinforce expectations beyond the classroom.
+        </p>
+      </div>
+
+      {/* PIVOTING MID-LESSON */}
+      <div className="artifact-block">
+        <div className="artifact-meta">Reflection · Pivoting When a Lesson Wasn't Working</div>
+
+        <p><strong>What Happened</strong></p>
+        <p>
+          On 3/5 I planned a scavenger hunt activity for 8th graders working on ordering 
+          and comparing irrational numbers. The activity was too complicated, students were 
+          disengaged, and almost no one was doing anything. I attempted to pivot to practice 
+          problems but the students were not receptive. I reflected honestly that I had 
+          overcomplicated the content too soon — asking students to order three numbers 
+          rather than starting with comparing two — and that estimating square roots, a 
+          skill the activity depended on, was something students found unengaging and 
+          difficult.
+        </p>
+
+        <p><strong>My Reflection</strong></p>
+        <p>
+          This was one of the harder days of my placement, and one of the most instructive. 
+          I recognized that the failure wasn't just about the activity format — it was about 
+          sequencing. I had moved students to a more complex task before they had enough 
+          fluency with the foundational skill. I also reflected that my own lack of enthusiasm 
+          for estimating square roots may have contributed to how I framed and delivered the 
+          content, which is a reminder that teacher energy is contagious in both directions.
+        </p>
+
+        <p><strong>What I Did Differently</strong></p>
+        <p>
+          In subsequent lessons I became more deliberate about sequencing complexity — 
+          introducing one new element at a time rather than combining multiple challenging 
+          skills in a single activity. I also became more attentive to the difference between 
+          an activity that isn't working because of student engagement and one that isn't 
+          working because of task design, since the response to each is different. On 3/17 
+          I reflected that switching from marker work to packet work helped students be 
+          calmer and more productive — a small but meaningful pivot that reinforced for me 
+          that variety in format matters as much as variety in content.
+        </p>
+      </div>
+
+    </div>
 
       {/* ── RESPONDING TO FEEDBACK RECEIVED ── */}
       <div className="section " id="responding-to-feedback">
         <h2>Responding to Feedback</h2>
+          <p className="blurb">
+            Receiving and responding to feedback is one of the most important parts of 
+            growing as a teacher. Throughout my student teaching placement I received 
+            regular feedback from my mentor teacher, university supervisor, and school 
+            administration — both through formal observations and informal day-to-day 
+            conversations. The following entries document specific feedback I received 
+            and the concrete steps I took to address it. Rather than viewing feedback 
+            as criticism, I approached each piece as an opportunity to refine my practice 
+            and become a more intentional and responsive educator.
+          </p>
+      
+      <div style={{ marginBottom: '2rem' }}>
 
-        <div style={{ marginBottom: '2rem' }}>
-          <h3>Feedback Received</h3>
-          {/* Summarize feedback from your mentor teacher, 
-              university supervisor, or formal observations */}
+        <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
+          <div className="artifact-meta">Feedback & Response · Using Simpler Examples and Slowing Down</div>
+
+          <p><strong>Feedback Received</strong></p>
+          <p>
+            After my first formal observation on 2/3, my mentor teacher noted that I should 
+            use more simple and straightforward examples when introducing new content, and 
+            that I should slow down my pace to give students more processing time. At that 
+            point in my placement I was moving through content at a pace that felt natural 
+            to me but was too fast for students who were encountering the material for the 
+            first time.
+          </p>
+
+          <p><strong>How I Responded</strong></p>
+          <p>
+            I became more deliberate about starting with the most basic version of a concept 
+            before increasing complexity, and about building in pauses and countdowns to give 
+            students time to think before expecting responses. This connected directly to the 
+            improvements I was making in calibrating the difficulty of my practice problems — 
+            both changes reflected a broader shift toward meeting students where they were 
+            rather than where I expected them to be.
+          </p>
         </div>
 
-        <div style={{ marginBottom: '2rem' }}>
-          <h3>How I Responded & Adjusted</h3>
-          {/* Specific changes you made in response to that feedback —
-              this is one of the strongest things you can show an evaluator */}
+        <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
+          <div className="artifact-meta">Feedback & Response · Putting the Cognitive Load on Students</div>
+
+          <p><strong>Feedback Received</strong></p>
+          <p>
+            Both my mentor teacher and university supervisor independently gave me feedback 
+            that I was doing too much of the thinking for students. My supervisor noted after 
+            my second observation on 2/11 that simply explaining content does not make it sink 
+            in — students need to be the ones doing the heavy lifting intellectually. My mentor 
+            teacher echoed this, encouraging me to give students more opportunities to solve 
+            problems themselves rather than walking through everything from the front of the room.
+          </p>
+
+          <p><strong>How I Responded</strong></p>
+          <p>
+            I began shifting away from extended teacher-led explanation and toward structures 
+            that required students to think and respond actively — cold calling, whiteboard 
+            activities, live polling, and Blooket games. I also adopted language that placed 
+            responsibility on students, such as asking them to explain where they were stuck 
+            rather than immediately providing the answer. By 3/19 my mentor teacher specifically 
+            noted that I was doing well at cold calling and keeping students more engaged, which 
+            was a meaningful marker of progress on this feedback.
+          </p>
         </div>
+
+        <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
+          <div className="artifact-meta">Feedback & Response · Varying Activity Formats to Maintain Engagement</div>
+
+          <p><strong>Feedback Received</strong></p>
+          <p>
+            My mentor teacher pointed out that doing the same activity format multiple days 
+            in a row caused students to disengage quickly, and encouraged me to vary formats 
+            more intentionally. This was reinforced in a conversation with another teacher on 
+            3/20, who noted that even activities students initially enjoy — like guided notes — 
+            lose their effectiveness when used repeatedly.
+          </p>
+
+          <p><strong>How I Responded</strong></p>
+          <p>
+            I became more intentional about rotating formats across consecutive lessons, 
+            alternating between marker work, packet practice, whiteboards, five-minute drills, 
+            and games. On 3/17 I reflected that simply switching from marker work to packet 
+            work made students noticeably calmer and more productive — a reminder that variety 
+            itself has value beyond the specific activity chosen. This feedback also influenced 
+            how I thought about planning, pushing me to consider the sequence of activities 
+            across a unit rather than just within a single lesson.
+          </p>
+        </div>
+
+        <div className="artifact-block">
+          <div className="artifact-meta">Feedback & Response · Incorporating Learning Targets and Success Criteria</div>
+
+          <p><strong>Feedback Received</strong></p>
+          <p>
+            During a classroom visit on 3/20 the school principal noted that he liked seeing 
+            learning targets and success criteria included directly on student materials. This 
+            was feedback I had not received before and it prompted me to reflect on how 
+            consistently I was making the purpose of each lesson transparent to students.
+          </p>
+
+          <p><strong>How I Responded</strong></p>
+          <p>
+            Following this feedback I made a deliberate effort to incorporate learning targets 
+            and success criteria into the materials I designed, so students could clearly see 
+            what they were working toward and what success looked like. This connected to broader 
+            conversations I had been having with my mentor teacher about helping students 
+            understand the why behind their learning — making success criteria visible is one 
+            concrete way to answer that question before students even have to ask it.
+          </p>
+        </div>
+
+      </div>
     </div>
 
     </div>

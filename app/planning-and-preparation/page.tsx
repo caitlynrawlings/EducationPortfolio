@@ -3,6 +3,7 @@
 import CooldownChart from '../components/CoolDownChart'
 import CooldownRubric from '../components/CoolDownRubric'
 import Gallery from '../components/Gallery'
+import TestChart from '../components/TestChart'
 
 
 export default function PlanningAndPreparation() {
@@ -177,14 +178,15 @@ export default function PlanningAndPreparation() {
 
         <div style={{ marginBottom: '2rem' }}>
           <h3>Product</h3>
-          <p className='blurb'>
-            While he math department I was doing my student teaching placement in limited summative assessment formats to traditional tests, 
-            I varied the ways students demonstrated their formative understanding throughout 
-            each unit by intentionally selecting different assessment formats based on the 
-            nature of the lesson and learning objective. These included exit tickets, digital 
-            polls, and written responses. This variety ensured that no single format 
-            consistently advantaged or disadvantaged particular learners, and gave me 
-            multiple windows into student thinking across different types of tasks.
+          <p>
+            While the math department at my student teaching placement limited summative 
+            assessment formats to traditional tests, I varied the ways students demonstrated 
+            their formative understanding throughout each unit by intentionally selecting 
+            different assessment formats based on the nature of the lesson and learning 
+            objective. These included exit tickets, digital polls, and written responses. 
+            This variety ensured that no single format consistently advantaged or 
+            disadvantaged particular learners, and gave me multiple windows into student 
+            thinking across different types of tasks.
           </p>
         </div>
 
@@ -317,6 +319,115 @@ export default function PlanningAndPreparation() {
 
         <div className="artifact-block">
           <div className="artifact-meta">Summative Assesment · March 2026</div>
+
+              <p>
+                The following end-of-unit assessment was administered to my 8th grade students 
+                at the conclusion of the exponents unit. This assessment was designed collaboratively 
+                by the math department team, and I contributed to the process by providing input 
+                on problem selection and alignment to the learning objectives covered during my 
+                instruction. The scored results and analysis below reflect the performance of the 
+                classes I taught during this unit.
+              </p>
+            <div className="rubric-wrapper">
+              <div className="rubric-section">
+                <p className="rubric-title">Question 1 — Equivalent Expressions (8.EE.A.1)</p>
+                <table className="rubric-table">
+                  <thead><tr><th>Score</th><th>Meaning</th></tr></thead>
+                  <tbody>
+                    <tr><td className="rubric-score">0</td><td>Did not attempt</td></tr>
+                    <tr><td className="rubric-score">1</td><td>Any other option</td></tr>
+                    <tr><td className="rubric-score">2</td><td>1 correct with no incorrect, or 2–3 correct with one incorrect</td></tr>
+                    <tr><td className="rubric-score">3</td><td>2 correct with no incorrect</td></tr>
+                    <tr><td className="rubric-score rubric-score-correct">4</td><td>All 3 correct</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div className="rubric-section">
+                <p className="rubric-title">Question 2 — Fill in the Exponent (8.EE.A.1)</p>
+                <table className="rubric-table">
+                  <thead><tr><th>Score</th><th>Meaning</th></tr></thead>
+                  <tbody>
+                    <tr><td className="rubric-score">0</td><td>Did not attempt</td></tr>
+                    <tr><td className="rubric-score">1</td><td>No correct expressions</td></tr>
+                    <tr><td className="rubric-score">2</td><td>One correct expression</td></tr>
+                    <tr><td className="rubric-score">3</td><td>2 correct expressions</td></tr>
+                    <tr><td className="rubric-score rubric-score-correct">4</td><td>All 3 correct</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div className="rubric-section">
+                <p className="rubric-title">Question 3 — True or False (8.EE.A.1)</p>
+                <table className="rubric-table">
+                  <thead><tr><th>Score</th><th>Meaning</th></tr></thead>
+                  <tbody>
+                    <tr><td className="rubric-score">0</td><td>Did not attempt</td></tr>
+                    <tr><td className="rubric-score">1</td><td>No correct</td></tr>
+                    <tr><td className="rubric-score">2</td><td>One correct</td></tr>
+                    <tr><td className="rubric-score">3</td><td>2 correct</td></tr>
+                    <tr><td className="rubric-score rubric-score-correct">4</td><td>All 3 correct — note: scores reduced one level for missing explanations</td></tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div className="rubric-section">
+                <p className="rubric-title">Question 4 — Simplify Expressions (8.EE.A.1)</p>
+                <table className="rubric-table">
+                  <thead><tr><th>Score</th><th>Meaning</th></tr></thead>
+                  <tbody>
+                    <tr><td className="rubric-score">0</td><td>Did not attempt</td></tr>
+                    <tr><td className="rubric-score">1</td><td>0–1 correct</td></tr>
+                    <tr><td className="rubric-score">2</td><td>2–3 correct</td></tr>
+                    <tr><td className="rubric-score">3</td><td>4 correct</td></tr>
+                    <tr><td className="rubric-score rubric-score-correct">4</td><td>All 5 correct</td></tr>
+                  </tbody>
+                </table>
+              </div>
+          
+
+              <TestChart/>
+
+              <p style={{ marginTop: '1.5rem' }}>
+      Analysis of the 8.7 Exponents end-of-unit assessment revealed an interesting and 
+      somewhat unexpected pattern. Students performed strongest on Questions 2 and 3 — 
+      filling in missing exponents and determining whether equations were true or false — 
+      with 79% of students scoring proficient or above on both. These questions required 
+      students to apply exponent rules in a structured way, and the results suggest that 
+      most students developed a solid procedural understanding of the rules covered in 
+      the unit.
+      <br /><br />
+      However, performance was notably weaker on Questions 1 and 4. Question 1, which 
+      asked students to identify all equivalent expressions, had the lowest proficiency 
+      rate at 46% — with 7 students scoring a 1 and 8 scoring a 2. This is striking 
+      because selecting equivalent expressions requires the same underlying knowledge 
+      as the other questions, suggesting that the multiple-select format itself may have 
+      contributed to the lower scores. Students may have been uncertain about whether 
+      to select an answer when they were not fully confident, leading to omissions that 
+      dropped their score even when their partial understanding was sound. Question 4, 
+      which asked students to simplify five expressions using a single exponent, had a 
+      54% proficiency rate — better than Question 1 but still below the class performance 
+      on Questions 2 and 3. The distribution here was more spread, with 8 students scoring 
+      a 2, suggesting partial mastery where students could simplify some but not all 
+      expressions correctly.
+      <br /><br />
+      One factor worth noting is that Question 3 included a rubric penalty for missing 
+      explanations — scores were reduced one level if students did not justify their 
+      true/false answers. Despite this added requirement, students still performed well 
+      on this question, which suggests they were generally able to articulate their 
+      reasoning when prompted to do so.
+      <br /><br />
+      In hindsight, I would have used this data to design a targeted re-teaching session 
+      focused on recognizing equivalent expressions — particularly helping students 
+      develop confidence in the multiple-select format by practicing the strategy of 
+      testing each option independently rather than trying to evaluate all options at 
+      once. I would also have reviewed Question 4 errors to identify which specific 
+      exponent rules — negative exponents, zero exponents, or multiplication and division 
+      rules — were causing the most difficulty, and addressed those specifically rather 
+      than re-teaching the whole unit.
+    </p>
+
+          </div>
           
         </div>
         
