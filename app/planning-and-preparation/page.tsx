@@ -309,9 +309,9 @@ export default function PlanningAndPreparation() {
               </p>
 
               <Gallery slides={[
-                { images: [`${basePath}/images/analysis/IMG_9623.png`], caption: 'Score 4 — Correct conversion in both directions' },
-                { images: [`${basePath}/images/analysis/IMG_9624.png`], caption: 'Common error — Decimal moved in the wrong direction' },
-                { images: [`${basePath}/images/analysis/IMG_9625.png`], caption: 'Common error — Appending zeros rather than moving the decimal' },
+                { images: [`${basePath}/images/analysis/IMG_9623.PNG`], caption: 'Score 4 — Correct conversion in both directions' },
+                { images: [`${basePath}/images/analysis/IMG_9624.PNG`], caption: 'Common error — Decimal moved in the wrong direction' },
+                { images: [`${basePath}/images/analysis/IMG_9625.PNG`], caption: 'Common error — Appending zeros rather than moving the decimal' },
               ]} />
 
             

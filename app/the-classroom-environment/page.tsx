@@ -45,8 +45,8 @@ export default function TheClassroomEnvironment() {
             easier access to all students during instruction and independent work.
           </p>
           <Gallery slides={[
-            { images: [`${basePath}/images/floorPlan/horseShoeTables.png`], caption: 'Blank room diagram' },
-            { images: [`${basePath}/images/floorPlan/horseShoeTablesLabeled.jpg`], caption: 'Labeled room diagram' },
+            { images: [`${basePath}/images/floorPlan/horseshoeTables.png`], caption: 'Blank room diagram' },
+            { images: [`${basePath}/images/floorPlan/horseshoeTablesLabeled.jpg`], caption: 'Labeled room diagram' },
           ]} />
 
           <div className="callout">
