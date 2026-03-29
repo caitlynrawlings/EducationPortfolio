@@ -3,13 +3,14 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from './components/NavBar'
+import basePath from "./utils/basePath";
 
 const nav = [
-  { label: 'Home', href: '/' },
-  { label: 'Planning and Preparation', href: '/planning-and-preparation' },
-  { label: 'The Classroom Environment', href: '/the-classroom-environment' },
-  { label: 'Instruction', href: '/instruction' },
-  { label: 'Professional Responsibilities', href: '/professional-responsibilities' },
+  { label: 'Home', href: `${basePath}/` },
+  { label: 'Planning and Preparation', href: `${basePath}/planning-and-preparation` },
+  { label: 'The Classroom Environment', href: `${basePath}/the-classroom-environment` },
+  { label: 'Instruction', href: `${basePath}/instruction` },
+  { label: 'Professional Responsibilities', href: `${basePath}/professional-responsibilities` },
 ]
 
 

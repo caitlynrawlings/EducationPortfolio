@@ -1,11 +1,12 @@
 'use client'
 import Link from 'next/link'
 import { useState, useEffect, useRef } from 'react'
+import basePath from '../utils/basePath'
 
 const nav = [
   {
     label: 'Planning & Preparation',
-    href: '/planning-and-preparation',
+    href: `/planning-and-preparation`,
     sections: [
       { label: 'Lesson Plans', id: 'lesson-plans' },
       { label: 'Differentiated Materials', id: 'differentiated-materials' },
@@ -14,7 +15,7 @@ const nav = [
   },
   {
     label: 'The Classroom Environment',
-    href: '/the-classroom-environment',
+    href: `/the-classroom-environment`,
     sections: [
       { label: 'Room Layout', id: 'room-layout' },
       { label: 'Seating Chart', id: 'seating-chart' },
@@ -23,7 +24,7 @@ const nav = [
   },
   {
     label: 'Instruction',
-    href: '/instruction',
+    href: `/instruction`,
     sections: [
       { label: 'Written Feedback', id: 'written-feedback' },
       { label: 'Personal Reflections', id: 'personal-reflections' },
@@ -32,7 +33,7 @@ const nav = [
   },
   {
     label: 'Professional Responsibilities',
-    href: '/professional-responsibilities',
+    href: `/professional-responsibilities`,
     sections: [
       { label: 'General Parent Updates', id: 'parent-updates' },
       { label: 'Parent Communication', id: 'parent-behavior' },
@@ -73,7 +74,7 @@ export default function NavBar() {
   return (
     <header>
       <div className="header-inner">
-        <Link href="/" className="portfolio-title">
+        <Link href={`/`} className="portfolio-title">
             Caitlyn Rawlings
         </Link>
 
@@ -105,7 +106,7 @@ export default function NavBar() {
                     {sections.map(({ label, id }) => (
                     <a
                         key={id}
-                        href={`${href}#${id}`}
+                        href={`${basePath}${href}#${id}`}
                         className="nav-dropdown-link"
                         onClick={() => setActiveDropdown(null)}
                       >
