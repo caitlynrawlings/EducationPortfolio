@@ -1,5 +1,6 @@
 // app/the-classroom-environment/page.tsx
 import Gallery from "../components/Gallery";
+import basePath from "../utils/basePath";
 
 export default function TheClassroomEnvironment() {
   return (
@@ -27,8 +28,8 @@ export default function TheClassroomEnvironment() {
             work and peer discussion, with students seated in small groups facing each other.
           </p>
           <Gallery slides={[
-            { images: ['/images/floorPlan/10Tables.png'], caption: 'Blank room diagram' },
-            { images: ['/images/floorPlan/10TablesLabeled.jpg'], caption: 'Labeled room diagram' },
+            { images: [`${basePath}/images/floorPlan/10Tables.png`], caption: 'Blank room diagram' },
+            { images: [`${basePath}/images/floorPlan/10TablesLabeled.jpg`], caption: 'Labeled room diagram' },
           ]} />
         </div>
 
@@ -44,8 +45,8 @@ export default function TheClassroomEnvironment() {
             easier access to all students during instruction and independent work.
           </p>
           <Gallery slides={[
-            { images: ['/images/floorPlan/horseShoeTables.png'], caption: 'Blank room diagram' },
-            { images: ['/images/floorPlan/horseShoeTablesLabeled.jpg'], caption: 'Labeled room diagram' },
+            { images: [`${basePath}/images/floorPlan/horseShoeTables.png`], caption: 'Blank room diagram' },
+            { images: [`${basePath}/images/floorPlan/horseShoeTablesLabeled.jpg`], caption: 'Labeled room diagram' },
           ]} />
 
           <div className="callout">
@@ -83,8 +84,8 @@ export default function TheClassroomEnvironment() {
             <div className="artifact-meta">Seating Chart · Student Teaching Placement</div>
 
             <Gallery slides={[
-              { images: ['/images/seatingChart/10Tables.png'], caption: '10 Tables' },
-              { images: ['/images/seatingChart/horseShoe.png'], caption: 'Horse Shoe Tables' },
+              { images: [`${basePath}/images/seatingChart/10Tables.png`], caption: '10 Tables' },
+              { images: [`${basePath}/images/seatingChart/horseShoe.png`], caption: 'Horse Shoe Tables' },
             ]} />
             <p>This is how I display the seating chart. It displays each "student" would have a student name. For the 10 tables seating arrangement,
             I this tells the students which table they are seated at, but not which seat at the table. This allows for come flexibility in 

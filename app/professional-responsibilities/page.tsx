@@ -1,5 +1,7 @@
 // app/professional-responsibilities/page.tsx
 
+import basePath from "../utils/basePath";
+
 export default function ProfessionalResponsibilities() {
   return (
     <div>
@@ -50,7 +52,7 @@ export default function ProfessionalResponsibilities() {
 
         <div className="artifact-block">
           <div className="artifact-meta">Draft of Parent Communication Emailed to Mentor Teacher · March 2026</div>
-          <img src="/images/communication1.png" alt="Draft of email sent to mentor teacher for review" />
+          <img src={`${basePath}/images/communication1.png`} alt="Draft of email sent to mentor teacher for review" />
         </div>
 
         {/* <div className="artifact-block">

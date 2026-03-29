@@ -35,7 +35,7 @@ export default function Home() {
       {/* ── HERO ── */}
       <div className="hero-section">
         {/* <img
-          src="/images/profile.png"
+          src={`${basePath}/images/profile.png`}
           alt="Profile photo"
           className="profile-photo"
         /> */}
