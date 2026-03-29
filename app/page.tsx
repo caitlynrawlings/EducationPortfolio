@@ -1,5 +1,6 @@
 // app/page.tsx
 import Link from 'next/link'
+import basePath from './utils/basePath'
 
 const domains = [
   {
@@ -34,11 +35,11 @@ export default function Home() {
 
       {/* ── HERO ── */}
       <div className="hero-section">
-        {/* <img
+        <img
           src={`${basePath}/images/profile.png`}
           alt="Profile photo"
           className="profile-photo"
-        /> */}
+        />
         <div className="hero-text">
           <h1>Caitlyn Rawlings</h1>
           {/* <p className="hero-subtitle">Student Teacher · High School Mathematics</p> */}
@@ -48,25 +49,25 @@ export default function Home() {
           </p>
           <div className="contact-row">
             <span>caitlyn.rawlings@gmail.com</span>
-            <span><a href="/* linkedin url */">LinkedIn</a></span>
+            {/* <span><a href="/* linkedin url ">LinkedIn</a></span> */}
           </div>
         </div>
       </div>
 
-      {/* ── TEACHING PHILOSOPHY ── */}
+      {/* ── TEACHING PHILOSOPHY ──
       <div className="section ">
         <h2>Teaching Philosophy</h2>
         <p>
-          {/* Paste your teaching philosophy statement here */}
+          {/* Paste your teaching philosophy statement here 
         </p>
-      </div>
+      </div> */}
 
 
       {/* ── RESUME ── */}
       <div className="section">
         <div className="resume-header-row">
           <h2>Resume</h2>
-          <a href="/resume.pdf" download className="download-btn">
+          <a href={`${basePath}/RawlingsResumePDF.pdf`} download className="download-btn">
             Download PDF
           </a>
         </div>
@@ -76,15 +77,16 @@ export default function Home() {
           <h3>Professional Profile</h3>
           <div className="resume-item">
             <p>
-              Passionate mathematics educator currently completing student teaching in 7th grade
-              math and pre-algebra, committed to making mathematics accessible, engaging, and
-              meaningful for all learners. Brings a strong foundation in working with diverse
-              students through K-12 substitute teaching, high school tutoring, and a
-              collegiate-level teacher assistant role, with a consistent focus on supporting
-              struggling learners while maintaining high expectations. Skilled at breaking down
-              complex concepts and fostering a classroom culture where students feel safe to take
-              risks and grow. Eager to bring energy, organization, and a genuine passion for
-              student success to a full-time mathematics teaching position.
+              Passionate mathematics educator currently completing student teaching in 7th 
+              grade math and pre-algebra, committed to making mathematics accessible, 
+              engaging, and meaningful for all learners. Brings a strong foundation in 
+              working with diverse students through K-12 substitute teaching, high school 
+              tutoring, and a collegiate-level teaching assistant, with a consistent focus 
+              on supporting struggling learners while maintaining high expectations. Skilled 
+              at breaking down complex concepts and fostering a classroom culture where 
+              students feel safe to take risks and grow. Eager to bring energy, organization, 
+              and a genuine passion for student success to a full-time mathematics teaching 
+              position. 
             </p>
           </div>
         </div>
@@ -95,10 +97,10 @@ export default function Home() {
 
           <div className="resume-item">
             <div className="resume-item-header">
-              <strong>Master of Arts in Teaching — Mathematics Education (Secondary)</strong>
+              <strong>Master of Arts in Teaching Mathematics Education (Secondary)</strong>
               <span className="resume-date">Anticipated May 2026</span>
             </div>
-            <p className="resume-institution">Western Governors University · Kent, WA</p>
+            <p className="resume-institution">Western Governors University · Salt Lake City, UT</p>
             <p style={{ fontSize: '0.88rem', color: 'var(--muted)', marginBottom: '0.4rem' }}>
               Relevant Coursework
             </p>
@@ -155,12 +157,10 @@ export default function Home() {
             </div>
             <p className="resume-institution">Orting Middle School · Orting, WA</p>
             <ul>
-              <li>Deliver daily instruction in 7th grade math and pre-algebra across multiple sections, designing lessons aligned to Washington state standards</li>
-              <li>Develop differentiated materials addressing content, process, and product to meet the needs of diverse learners including students with IEPs</li>
-              <li>Design and administer formative and summative assessments, analyzing student data to adjust instruction and inform small group support</li>
-              <li>Maintain a structured, high-expectation classroom environment through consistent routines, a weekly seating rotation, and a clear behavior escalation plan</li>
-              <li>Collaborate with mentor teacher, PLC team, and math department to align instruction and support student growth</li>
-              <li>Communicate regularly with families through ParentSquare unit updates and individual emails regarding student progress and behavior</li>
+              <li>Design and deliver daily math instruction across multiple 7th and 8th grade sections aligned to Washington state standards, incorporating formative assessment data to adjust pacing and content in real time </li>
+              <li>Develop differentiated materials for a diverse learner population including students with IEPs, ensuring equitable access to grade-level curriculum </li>
+              <li>Collaborated with mentor teacher and PLC team to align instructional strategies across sections, supporting consistent student growth schoolwide </li>
+              <li>Partnered with mentor teacher to maintain ongoing family communication via ParentSquare and individual outreach, keeping families informed of student progress and behavioral concerns </li>
             </ul>
           </div>
 
@@ -171,8 +171,8 @@ export default function Home() {
             </div>
             <p className="resume-institution">Franklin Pierce School District · Tacoma, WA</p>
             <ul>
-              <li>Foster a disciplined, safe, and positive learning atmosphere by managing student behavior and enforcing school policies</li>
-              <li>Adapt teaching methods across various grade levels and subject areas to meet diverse learning styles and student needs</li>
+              <li>Maintain productive, safe classroom environments across diverse grade levels and subject areas by applying consistent behavior management strategies and school policies </li>
+              <li>Demonstrate the ability to step into various grade levels and subject areas, adapting teaching methods to meet diverse learning styles and student needs while fulfilling lesson plans </li>
             </ul>
           </div>
 
@@ -183,8 +183,7 @@ export default function Home() {
             </div>
             <p className="resume-institution">InventXYZ · Seattle, WA</p>
             <ul>
-              <li>Worked with over 200 high school students to build knowledge in data science through analyzing and creating data visualizations using Tableau</li>
-              <li>Guided students from meeting less than 50% of assignment requirements to meeting 100% through targeted feedback and support</li>
+              <li>Supported 200+ high school students in building data science skills through hands-on Tableau projects, coaching a cohort from under 50% to 100% assignment completion through targeted feedback </li>
             </ul>
           </div>
 
@@ -195,8 +194,8 @@ export default function Home() {
             </div>
             <p className="resume-institution">UW Department of Computer Science · Seattle, WA</p>
             <ul>
-              <li>Mentored over 120 students in Introduction to Digital Design, explaining challenging concepts and assisting with debugging SystemVerilog code and troubleshooting hardware and software problems</li>
-              <li>Coordinated office hours with 4 teaching assistants to ensure widespread availability and timely return of assessments</li>
+              <li>Mentored 120+ students in Introduction to Digital Design, clarifying complex concepts and providing debugging support for SystemVerilog code and hardware/software issues </li>
+              <li>Coordinated office hours across a 5-TA team to maximize student access to support and ensure timely grading turn around </li>
             </ul>
           </div>
 
@@ -213,8 +212,8 @@ export default function Home() {
             </div>
             <p className="resume-institution">University of Washington · Seattle, WA</p>
             <ul>
-              <li>Coordinated large-scale events requiring extensive planning, communication, and organization, with attendance of up to 2,000 people</li>
-              <li>Fostered collaboration between team and over 30 on-campus and off-campus entities</li>
+              <li>Planned and executed campus event with attendance up to 2000, managing logistics and communication from concept to completion </li>
+              <li>Built and maintained partnerships with 30+ organizations to co-produce programming, strengthening community engagement across residential life </li>
             </ul>
           </div>
 
