@@ -22,14 +22,14 @@ export default function Instruction() {
         teacher markings indicating what was correct, give students one class period to 
         review their work, and then collect the tests for a final grade. For the assessment 
         shown below, my mentor teacher and I made the collaborative decision to offer two 
-        rounds of revision opportunities given the difficulty of the test — we wanted 
+        rounds of revision opportunities given the difficulty of the test, we wanted 
         students to have multiple chances to engage with their errors and demonstrate 
         growth. In all of the following examples, orange markings reflect feedback from 
-        the first round and purple markings reflect the second and final round.
+        the first round and purple markings reflect the second round.
       </p>
 
       <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
-        <div className="artifact-meta">Written Feedback on Student Work · Unit 6 Assessment · March 2026</div>
+        <div className="artifact-meta">Written Feedback on Student Test · March 2026</div>
 
         <Gallery slides={[
           { images: [`${basePath}/images/writtenFeedback/correctedExplanation.png`], caption: 'Example 1 — Prompting student reasoning' },
@@ -38,7 +38,7 @@ export default function Instruction() {
           In this example, rather than simply marking the answer as incorrect, I prompted 
           the student to explain why the step they identified was wrong. The student had 
           correctly located the error in the sample work but had not yet articulated what 
-          went wrong mathematically. My feedback encouraged them to go further — and in 
+          went wrong mathematically. My feedback encouraged them to go further and in 
           their revision, the student was able to explain the mistake using vocabulary from 
           the unit, specifically identifying that like terms had been combined incorrectly. 
           This exchange illustrated the value of feedback that pushes students to reason 
@@ -50,14 +50,14 @@ export default function Instruction() {
         ]} />
         <p>
           In this example I acknowledged the steps the student had completed correctly 
-          before directing their attention to two specific issues — an arithmetic error 
-          in their work and a missing inequality symbol in their final answer. I noted 
-          that even if the arithmetic had been correct, the absence of the inequality 
+          before directing their attention to two specific issues. One issue was an arithmetic error 
+          in their work and the other was a missing inequality symbol in their final answer. 
+          Even if the arithmetic had been correct, the absence of the inequality 
           symbol would have made the answer incomplete. While the student did respond 
           to the feedback by adding an inequality symbol in their revision, they chose 
           the wrong symbol and did not revisit the arithmetic error. This was a useful 
-          reminder that written feedback does not always lead to full correction — 
-          students sometimes engage with only part of the feedback given, which points 
+          reminder that written feedback does not always lead to full correction. 
+          Students sometimes engage with only part of the feedback given, which points 
           to the importance of also building in time to discuss common errors whole-class 
           rather than relying solely on individual written comments.
         </p>
@@ -79,16 +79,16 @@ export default function Instruction() {
 
       {/* ADJUSTING DIFFICULTY */}
       <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
-        <div className="artifact-meta gap-1">Reflection · Adjusting Lesson Difficulty Based on Student Performance</div>
+        <div className="artifact-meta gap-1">Reflection · February 3, 2026</div>
 
         <p><strong>What Happened</strong></p>
         <p>
           Early in my placement I struggled with calibrating the difficulty level of 
           the practice problems I wrote. After my mentor teacher was absent on 2/2, 
           I reflected that the problems I had written for the 8th graders were too 
-          hard — students were frustrated and the lesson lost momentum. This pattern 
+          hard. Students were frustrated and the lesson lost momentum. This pattern 
           repeated on 2/3, where I noted again that the challenge problems I wrote 
-          were too difficult for where students were.
+          were too difficult for where students were, especially without enough scaffolding and support.
         </p>
 
         <p><strong>My Reflection</strong></p>
@@ -96,8 +96,9 @@ export default function Instruction() {
           I realized I was writing problems at a level I found interesting rather than 
           at a level appropriate for where students were in their understanding. Writing 
           good practice problems requires knowing not just the content but the specific 
-          entry points and common struggle points of your students — something that takes 
-          time and observation to develop. I also recognized that problems that are too 
+          entry points and common struggle points of your students. This takes 
+          time and observation to develop, as well as a deep understanding of the cirriculum. 
+          I also recognized that problems that are too 
           hard can be more damaging than problems that are too easy, because frustration 
           shuts down engagement entirely.
         </p>
@@ -117,11 +118,11 @@ export default function Instruction() {
 
       {/* COLD CALLING */}
       <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
-        <div className="artifact-meta">Reflection · Developing Cold Calling Strategies</div>
+        <div className="artifact-meta">Reflection · February 13, 2026</div>
 
         <p><strong>What Happened</strong></p>
         <p>
-          On 2/13 I reflected on a challenge I was having with cold calling — specifically, 
+          On 2/13 I reflected on a challenge I was having with cold calling. Specifically, 
           what to do when a student gets an answer wrong. I was worried about students 
           feeling embarrassed or shut down in front of their peers, which was making me 
           hesitant to use cold calling effectively as a discussion tool.
@@ -131,7 +132,7 @@ export default function Instruction() {
         <p>
           I recognized that the discomfort I felt was getting in the way of using cold 
           calling as the powerful formative tool it can be. The issue wasn't cold calling 
-          itself — it was that I hadn't established clear language and norms around mistakes 
+          itself, but rather that I hadn't established clear language and norms around mistakes 
           being a normal and valued part of the learning process. Without that foundation, 
           students had no framework for how to respond when they didn't know the answer.
         </p>
@@ -154,7 +155,7 @@ export default function Instruction() {
 
       {/* IN-THE-MOMENT DIFFERENTIATION */}
       <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
-        <div className="artifact-meta">Reflection · Differentiating Instruction in the Moment</div>
+        <div className="artifact-meta">Reflection · February 20, 2026</div>
 
         <p><strong>What Happened</strong></p>
         <p>
@@ -169,26 +170,36 @@ export default function Instruction() {
         <p>
           The differentiation intent was sound but the logistics weren't tight enough. 
           Moving students mid-class into new groups based on diagnostic results requires 
-          clear procedures and student buy-in that I hadn't fully established. The good 
-          news was that students still ended up working on the skill they needed — the 
-          differentiation happened in content even if not in grouping. I also reflected 
-          on a similar activity for 7th graders that same day — a progressive three-level 
-          practice set — which I liked conceptually but found challenging to manage because 
-          many students came up to have their work checked at the same time.
+          clear procedures and student buy-in that I hadn't fully established. The students 
+          still ended up working on the skill they needed, with the 
+          differentiation happened in content even if not in grouping. Even without this grouping, 
+          I thought the lesson was effective and my mentor teacher agreed, saying that she noticed 
+          good student engagement.I also reflected 
+          on a similar activity for 7th graders that same day, a progressive three-level 
+          practice set, which I liked conceptually but found challenging to manage because 
+          many students came up to have their work checked at the same time. I discussed this 
+          with another teacher who had used a similar format, and she noted that she finds it easier when 
+          she makes the problems very quick to check and also added that she likes to include a few levels 
+          of easy problems at the start of the set to help build student confidence before they reach more difficult material.
         </p>
 
         <p><strong>What I Did Differently</strong></p>
         <p>
-          These experiences informed the self-assessment differentiation lesson I designed 
-          for scientific notation, where students identified their own areas of difficulty 
-          and selected targeted practice rather than being assigned to groups by the teacher. 
-          This approach achieved the same differentiation goal while removing the logistical 
-          challenge of physically moving students mid-lesson and giving students more agency 
-          over their own learning.
+          These experiences informed how I implemented lessons like this moving forward. 
+          I have used a similar structure of students choosing their practice activity since 
+          then, but decided not to have students physically move into new groups mid-lesson. 
+          Instead, I have kept students in their original seats and had them choose from different 
+          activities at their desks, which has been easier to manage while still allowing for differentiation. 
+          I would still like to utilize grouping, but I would prefer to do so when I have my own classroom that
+          I will be establishing my own norms and routines in. When doing this activity, I am intentional about 
+          the language I use, asking students what they feel they need to work on, to establish student agency 
+          over their learning. I also became more intentional about including 
+          easier problems at the start of practice sets to build confidence, and about making problems quick 
+          to check when I wanted to use a progressive difficulty format. 
         </p>
       </div>
 
-      {/* CLASSROOM MANAGEMENT */}
+      {/* CLASSROOM MANAGEMENT
       <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
         <div className="artifact-meta">Reflection · Improving Classroom Management Over Time</div>
 
@@ -229,11 +240,11 @@ export default function Instruction() {
           emails for 6th period was another deliberate strategy to enlist family support 
           and reinforce expectations beyond the classroom.
         </p>
-      </div>
+      </div> */}
 
       {/* PIVOTING MID-LESSON */}
       <div className="artifact-block">
-        <div className="artifact-meta">Reflection · Pivoting When a Lesson Wasn't Working</div>
+        <div className="artifact-meta">Reflection · March 5, 2026</div>
 
         <p><strong>What Happened</strong></p>
         <p>
@@ -241,8 +252,8 @@ export default function Instruction() {
           and comparing irrational numbers. The activity was too complicated, students were 
           disengaged, and almost no one was doing anything. I attempted to pivot to practice 
           problems but the students were not receptive. I reflected honestly that I had 
-          overcomplicated the content too soon — asking students to order three numbers 
-          rather than starting with comparing two — and that estimating square roots, a 
+          overcomplicated the content too soon, asking students to order three numbers 
+          rather than starting with comparing two, and that estimating square roots, a 
           skill the activity depended on, was something students found unengaging and 
           difficult.
         </p>
@@ -250,7 +261,7 @@ export default function Instruction() {
         <p><strong>My Reflection</strong></p>
         <p>
           This was one of the harder days of my placement, and one of the most instructive. 
-          I recognized that the failure wasn't just about the activity format — it was about 
+          I recognized that the failure wasn't just about the activity format, it was about 
           sequencing. I had moved students to a more complex task before they had enough 
           fluency with the foundational skill. I also reflected that my own lack of enthusiasm 
           for estimating square roots may have contributed to how I framed and delivered the 
@@ -259,13 +270,13 @@ export default function Instruction() {
 
         <p><strong>What I Did Differently</strong></p>
         <p>
-          In subsequent lessons I became more deliberate about sequencing complexity — 
+          In subsequent lessons I became more deliberate about sequencing complexity, 
           introducing one new element at a time rather than combining multiple challenging 
           skills in a single activity. I also became more attentive to the difference between 
           an activity that isn't working because of student engagement and one that isn't 
           working because of task design, since the response to each is different. On 3/17 
           I reflected that switching from marker work to packet work helped students be 
-          calmer and more productive — a small but meaningful pivot that reinforced for me 
+          calmer and more productive, which was a small but meaningful pivot that reinforced for me 
           that variety in format matters as much as variety in content.
         </p>
       </div>
@@ -289,7 +300,7 @@ export default function Instruction() {
       <div style={{ marginBottom: '2rem' }}>
 
         <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
-          <div className="artifact-meta">Feedback & Response · Using Simpler Examples and Slowing Down</div>
+          <div className="artifact-meta">Feedback & Response · February 3, 2026</div>
 
           <p><strong>Feedback Received</strong></p>
           <p>
@@ -317,23 +328,13 @@ export default function Instruction() {
 
           <p><strong>Feedback Received</strong></p>
           <p>
-            Both my mentor teacher and university supervisor independently gave me feedback 
-            that I was doing too much of the thinking for students. My supervisor noted after 
-            my second observation on 2/11 that simply explaining content does not make it sink 
-            in — students need to be the ones doing the heavy lifting intellectually. My mentor 
-            teacher echoed this, encouraging me to give students more opportunities to solve 
-            problems themselves rather than walking through everything from the front of the room.
+            Classroom management. Clinical supervisor told me to put it on student. Ask them if they are ready. 
+            Mentor teacher told me to use more positive praise and proximity to manage behavior, and to use cold calling more effectively to keep students engaged.
           </p>
 
           <p><strong>How I Responded</strong></p>
           <p>
-            I began shifting away from extended teacher-led explanation and toward structures 
-            that required students to think and respond actively — cold calling, whiteboard 
-            activities, live polling, and Blooket games. I also adopted language that placed 
-            responsibility on students, such as asking them to explain where they were stuck 
-            rather than immediately providing the answer. By 3/19 my mentor teacher specifically 
-            noted that I was doing well at cold calling and keeping students more engaged, which 
-            was a meaningful marker of progress on this feedback.
+            
           </p>
         </div>
 
@@ -345,16 +346,16 @@ export default function Instruction() {
             My mentor teacher pointed out that doing the same activity format multiple days 
             in a row caused students to disengage quickly, and encouraged me to vary formats 
             more intentionally. This was reinforced in a conversation with another teacher on 
-            3/20, who noted that even activities students initially enjoy — like guided notes — 
-            lose their effectiveness when used repeatedly.
+            3/20, who noted that even activities students initially enjoy
+            lose their effectiveness when used too often repeatedly.
           </p>
 
           <p><strong>How I Responded</strong></p>
           <p>
             I became more intentional about rotating formats across consecutive lessons, 
             alternating between marker work, packet practice, whiteboards, five-minute drills, 
-            and games. On 3/17 I reflected that simply switching from marker work to packet 
-            work made students noticeably calmer and more productive — a reminder that variety 
+            and online activities. On 3/17 I reflected that simply switching from marker work to packet 
+            work made students noticeably calmer and more productive, a reminder that variety 
             itself has value beyond the specific activity chosen. This feedback also influenced 
             how I thought about planning, pushing me to consider the sequence of activities 
             across a unit rather than just within a single lesson.
@@ -362,7 +363,7 @@ export default function Instruction() {
         </div>
 
         <div className="artifact-block">
-          <div className="artifact-meta">Feedback & Response · Incorporating Learning Targets and Success Criteria</div>
+          <div className="artifact-meta">Feedback & Response · March 20, 2026</div>
 
           <p><strong>Feedback Received</strong></p>
           <p>

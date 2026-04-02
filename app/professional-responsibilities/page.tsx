@@ -82,7 +82,7 @@ export default function ProfessionalResponsibilities() {
         <h2>Parent Communication About Student Behavior</h2>
 
         <p style={{ marginBottom: '2rem' }}>
-          The following emails were drafted by me and sent by my mentor teacher to families 
+          The following emails were drafted by me and sent by my mentor teacher to the families 
           of students in my classes. These communications reflect my commitment to maintaining 
           open, professional, and timely communication with families regarding student behavior. 
           This particular class had become increasingly challenging to manage, so I made the 
@@ -133,7 +133,7 @@ export default function ProfessionalResponsibilities() {
             I attended all staff and PLC meetings held during my student teaching placement. 
             The following are selected examples that represent the range of topics 
             and discussions I observed and engaged in. As a student 
-            teacher I started primarily in an observational role, but as my placement progressed 
+            teacher, I started primarily in an observational role, but as my placement progressed, 
             I was able to contribute more actively to discussions and planning. These meetings 
             significantly shaped my understanding of how collaborative professional 
             communities use data and shared planning to support student learning.
@@ -208,9 +208,9 @@ export default function ProfessionalResponsibilities() {
                 <span className="label">My Contributions and Reflections</span>
                 This was near the beginning of my placement, so I was primarily in an observational role during this meeting. 
                 I observed as the team discussed which common formative assessments to bring to the upcoming enrichment day, 
-                which is a all-day professional development day for teachers. This was informative to observe as it showed me 
+                which is an all-day professional development day for teachers. This was informative to observe as it showed me 
                 how the team uses common formative assessments as a tool for professional development and collaborative learning, 
-                as well as how they determined which assesments would be most useful for the team to review together during the enrichment day. 
+                as well as how they determined which assessments would be most useful for the team to review together during the enrichment day. 
                 I also observed as the team discussed whether or not to order workbooks for next year, which was interesting to see how the 
                 team weighs the pros and cons of different resources and makes decisions together. Certain factors were important to the teachers, 
                 like the grade-level teams being on the same page with what resources to use. The data review portion of the meeting was particularly 
@@ -227,7 +227,7 @@ export default function ProfessionalResponsibilities() {
                 <li>Plan next week's Falcon Times </li>
                 <li>Plan for and schedule upcoming team observations</li>
                 <li>Check out the End-of-Unit survey [Mentor Teacher] made </li>
-                <li>Create examplars for upcoming units (if time) </li>
+                <li>Create exemplars for upcoming units (if time) </li>
                 <li>Data analysis </li>
               </ul>
               
@@ -307,18 +307,18 @@ export default function ProfessionalResponsibilities() {
                 they would be doing 7th grade practice of circle measurement problems. I also assigned students from 
                 my classes who needed to do test corrections or retakes to another teacher's class for the next Falcon Time. 
                 I observed as the team worked on planning for upcoming team observations, in which the teachers from the team 
-                would be observing each other's classes and providing feedback on use of student discussion in class. 
+                would be observing each other's classes and providing feedback on the use of student discussion in class. 
                 I also observed as the team worked on finalizing the End-of-Unit survey that my Mentor Teacher had created, 
                 which would be given to students at the end of each unit to gather feedback on what they found most helpful 
                 and what they still had questions about. I found this useful to observe the types of information the team values 
-                gathering from students and think that this is a powerful tool I could use in my own practice. We did not have 
-                time to work on creating exemplars for upcoming units. The 8th grade teachers needed to finalizing the upcoming 
-                Pythagrean Theorem unit test. I contributed to this, sharing my thoughts on the types of problems that would be 
+                gathering from students, and I think that this is a powerful tool I could use in my own practice. We did not have 
+                time to work on creating exemplars for upcoming units. The 8th grade teachers needed to finalize the upcoming 
+                Pythagorean Theorem unit test. I contributed to this, sharing my thoughts on the types of problems that would be 
                 appropriate on the test to measure the learning objectives for the unit. We also spent some time sharing our analysis 
                 of formative data from exit tickets. I shared that while many students did well when solving for the hypotenuse, 
                 a common area of struggle was solving for a leg when given the hypotenuse and the other leg. I also shared my observations 
                 that the students from my classes had a hard time estimating the value of square roots, which is a skill that was going to 
-                be on the test and I ensured that our unit review included some practice on that skill. 
+                be on the test, and I ensured that our unit review included some practice on that skill. 
               </div>
             </div>
 {/* 
@@ -369,8 +369,8 @@ export default function ProfessionalResponsibilities() {
               <div className="artifact-meta">Staff Meeting · March 3, 2026</div>
               <strong>Agenda:</strong>
               <ul>
-                <li>Formative assesment process</li>
-                <li>Incorperating Claim-Evidence-Reasoning</li>
+                <li>Formative assessment process</li>
+                <li>Incorporating Claim-Evidence-Reasoning</li>
                 <li>DOK levels and deep thinking</li>
               </ul>
 
@@ -379,7 +379,7 @@ export default function ProfessionalResponsibilities() {
                 This staff meeting strengthened my understanding of how to design 
                 instruction that pushes students toward deeper thinking, particularly through the 
                 frameworks of Claim-Evidence-Reasoning and Depth of Knowledge levels. I found the 
-                reflection on what aspects of the this process we are implementing well and where we can 
+                reflection on what aspects of this process we are implementing well and where we can 
                 grow as a team to be particularly useful, as it gave me a clear sense of how the math team 
                 is currently using these frameworks and where there are opportunities for growth. I also 
                 appreciated the discussion of specific strategies for incorporating these frameworks into instruction, 
@@ -460,7 +460,7 @@ export default function ProfessionalResponsibilities() {
               require students to justify their thinking and engage in genuine mathematical reasoning. 
               The discussion of Depth of Knowledge levels also gave me a practical framework for 
               evaluating whether my own questions and assessments are pushing students toward deeper 
-              thinking or keeping them at surface-level recall. By the end of the day I had revised 
+              thinking or keeping them at surface-level recall. By the end of the day, I had revised 
               an existing formative assessment to incorporate higher DOK levels and clearer success 
               criteria, which I was able to bring directly back into my classroom. This experience 
               reinforced my belief that professional development is most powerful when it is 
@@ -482,7 +482,7 @@ export default function ProfessionalResponsibilities() {
         <p>
           Participating in student support meetings is a critical part of professional 
           practice that extends well beyond the classroom. During my student teaching 
-          placement I had the opportunity to attend an IEP eligibility meeting, which 
+          placement, I had the opportunity to attend an IEP eligibility meeting, which 
           gave me firsthand experience with the collaborative process schools use to 
           identify and support students with diverse learning needs. In accordance with 
           student privacy requirements, no identifying information is included below.
@@ -499,9 +499,9 @@ export default function ProfessionalResponsibilities() {
 
           <p><strong>Discussion</strong></p>
           <ul>
-            <li>Teachers shared observations of the student's academic strengths and areas of difficulty</li>
-            <li>Team discussed whether the student's disability was negatively impacting their academic performance</li>
-            <li>Collaborative discussion between teachers and the student's mother led to the decision to proceed with a formal IEP evaluation</li>
+            <li>Teachers shared observations of the student's academic strengths and areas of difficulty.</li>
+            <li>Team discussed whether the student's disability was negatively impacting their academic performance.</li>
+            <li>Collaborative discussion between teachers and the student's mother led to the decision to proceed with a formal IEP evaluation.</li>
           </ul>
 
           <div className="callout">
