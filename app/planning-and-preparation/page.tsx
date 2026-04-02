@@ -20,7 +20,7 @@ export default function PlanningAndPreparation() {
         <h2>Lesson Plans</h2>
         <p className="blurb">
           The following lesson plans were designed and taught during my student teaching 
-          placement. Each plan reflects my approach to direct instruction — chunking content 
+          placement. Each plan reflects my approach to direct instruction, chunking content 
           into manageable parts, incorporating both formative and summative assessment, 
           and building in supports for diverse learners. Both plans follow a warm-up, 
           direct instruction, practice, and exit ticket structure that provides consistency 
@@ -30,14 +30,14 @@ export default function PlanningAndPreparation() {
         <div className="artifact-block">
           <div className="artifact-meta">Direct Instruction Lesson Plan · February 2026</div>
           <Gallery slides={[
-            { images: [`${basePath}/images/lessonPlans/LessonPlan2-1.png`, `${basePath}/images/lessonPlans/LessonPlan2-2.png`, `${basePath}/images/lessonPlans/LessonPlan2-3.png`], caption: 'Rational vs. Irrational Numbers - 8th Grade Math' },
+            { images: [`${basePath}/images/lessonPlans/LessonPlan1-1.png`, `${basePath}/images/lessonPlans/LessonPlan1-2.png`, `${basePath}/images/lessonPlans/LessonPlan1-3.png`], caption: 'Rational vs. Irrational Numbers - 8th Grade Math' },
           ]} />
         </div>
 
         <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
           <div className="artifact-meta">Direct Instruction Lesson Plan · March 2026</div>
           <Gallery slides={[
-            { images: [`${basePath}/images/lessonPlans/LessonPlan1-1.png`, `${basePath}/images/lessonPlans/LessonPlan1-2.png`, `${basePath}/images/lessonPlans/LessonPlan1-3.png`], caption: 'Angle Relationships - 7th Grade Math' },
+            { images: [`${basePath}/images/lessonPlans/LessonPlan2-1.png`, `${basePath}/images/lessonPlans/LessonPlan2-2.png`, `${basePath}/images/lessonPlans/LessonPlan2-3.png`], caption: 'Angle Relationships - 7th Grade Math' },
           ]} />
         </div>
       </div>
@@ -79,10 +79,10 @@ export default function PlanningAndPreparation() {
                 { images: [`${basePath}/images/pythagreanTheoremLeveledPractive/77a171b7-6.png`], caption: 'Level 6: Real-world applications' },
                 { images: [`${basePath}/images/pythagreanTheoremLeveledPractive/77a171b7-7.png`], caption: 'Level 7: Extended thinking and challenge problems' },
               ]} />
-              <p>
+              {/* <p>
               Student work samples from this activity, including written feedback, 
               can be found in the <a href="/instruction#written-feedback">Instruction</a> domain.
-            </p>
+            </p> */}
           </div>
             
         </div>
@@ -187,7 +187,8 @@ export default function PlanningAndPreparation() {
             objective. These included exit tickets, digital polls, and written responses. 
             This variety ensured that no single format consistently advantaged or 
             disadvantaged particular learners, and gave me multiple windows into student 
-            thinking across different types of tasks.
+            thinking across different types of tasks. Some of these formative assessments are 
+            discussed below in the <a href="#assessment-tools">Assessment Tools & Data Analysis</a> section.
           </p>
         </div>
 
@@ -199,7 +200,7 @@ export default function PlanningAndPreparation() {
         <div style={{ marginBottom: '2rem' }}>
           <h3>Assessment Tools</h3>
           <p className='blurb'>
-            Assesment tools I used range from quick formative checks like digital polls and exit tickets to more formal summative assessments. 
+            Assessment tools I used range from quick formative checks like digital polls and exit tickets to more formal summative assessments. 
             The summative assessments I used were uniform across the math department and were in traditional test formats, but I used a variety of 
             formative assessment tools to gauge student understanding throughout each unit. These included digital polls, which allowed for 
             anonymous participation and real-time feedback during lessons, and exit tickets, which provided a quick snapshot of student understanding 
@@ -208,7 +209,7 @@ export default function PlanningAndPreparation() {
           </p>
           <div className="artifact-block">
               <div className="artifact-meta">Live Polls · February 2026</div>
-              <p>These polls were put incorperated into slides during a lesson on irrational numbers. This provided as anonymous 
+              <p>These polls were incorporated into slides during a lesson on irrational numbers. This provided an anonymous 
                 way for students to participate in class and demonstrate their understanding.</p>
               <Gallery slides={[
                 { images: [`${basePath}/images/pollEv/Screenshot 2026-03-16 075009.png`], caption: 'Poll 1' },
@@ -225,16 +226,16 @@ export default function PlanningAndPreparation() {
                 { images: [`${basePath}/images/pollEv/Screenshot 2026-03-16 075244.png`], caption: 'Poll 12' },
                 { images: [`${basePath}/images/pollEv/Screenshot 2026-03-16 075254.png`], caption: 'Poll 13' },
               ]} />
-              <p>
+              {/* <p>
               The answered poll questions can be seen  
               can be found in the <a href="instruction#written-feedback">????</a> domain.
               Disscussion of how I used the data to inform my instruction can be found in the <a href="#assessment-tools-and-data-analysis">????</a> section below.
-            </p>
+            </p> */}
           </div>
 
           <div className="artifact-block">
               <div className="artifact-meta">Exit Tickets · February and March 2026</div>
-            <p>Another way to assess student understanding was through exit tickets. I used a mix of digital and physical exit tickets as tools  students at the end of each lesson.</p>
+            <p>Another way to assess student understanding was through exit tickets. I used a mix of digital and physical exit tickets as tools for students at the end of each lesson.</p>
 
               <Gallery slides={[
                 { images: [`${basePath}/images/exitTickets/498faf0b-1.png`], caption: 'Physical Exit Ticket' },
@@ -246,18 +247,19 @@ export default function PlanningAndPreparation() {
                   ], 
                   caption: 'Digital Exit Ticket - Google Form' },
               ]} />
-              <p>
-              How I analyzed the data can be found in the <a href="/instruction#written-feedback">??????</a> domain.
-            </p>
+             
           </div>
       </div>
 
       <div style={{ marginBottom: '2rem' }}>
           <h3>Data Analysis</h3>
           <p className='blurb'>
-            I use both formative and summative assessment data to identify patterns in student understanding and inform my instructional decisions. 
-            Below is an example of how I analyzed data from a formative cool down assessment to identify common misconceptions and target areas for 
-            re-teaching in subsequent lessons. And a summative assesment data analysis that 
+            I use both formative and summative assessment data to identify patterns in student 
+            understanding and inform my instructional decisions. Below is an example of how I 
+            analyzed data from a formative cool down assessment to identify common misconceptions 
+            and target areas for re-teaching in subsequent lessons, and a summative assessment data 
+            analysis that I used to evaluate overall student mastery of unit learning goals, 
+            identify trends across the class, and plan targeted review and extension opportunities.
           </p>
 
           <div className="artifact-block">
@@ -281,12 +283,12 @@ export default function PlanningAndPreparation() {
               across the two conversion directions. Students demonstrated strong proficiency in 
               converting from standard form to scientific notation, with the majority scoring 
               at or near full marks on Question 1. However, approximately one third of students 
-              struggled with the reverse process — converting from scientific notation to standard 
-              form — suggesting that while students could produce scientific notation, interpreting 
+              struggled with the reverse process, converting from scientific notation to standard 
+              form, suggesting that while students could produce scientific notation, interpreting 
               and reversing the process was less secure.
               <br /><br />
               Examining student work revealed two common error patterns on Question 2. The most 
-              frequent mistake was adding zeros rather than moving the decimal point — for example, 
+              frequent mistake was adding zeros rather than moving the decimal point. For example, 
               interpreting 4.5 × 10<sup>3</sup> as 4500 by appending three zeros rather than 
               understanding it as a shift in place value. The second common error was moving the 
               decimal in the wrong direction, indicating confusion about the relationship between 
@@ -321,7 +323,7 @@ export default function PlanningAndPreparation() {
         <div className="artifact-block">
           <div className="artifact-meta">Summative Assesment · March 2026</div>
 
-              <p>
+              <p className='mb-4'>
                 The following end-of-unit assessment was administered to my 8th grade students 
                 at the conclusion of the exponents unit. This assessment was designed collaboratively 
                 by the math department team, and I contributed to the process by providing input 
@@ -391,8 +393,8 @@ export default function PlanningAndPreparation() {
 
               <p style={{ marginTop: '1.5rem' }}>
       Analysis of the 8.7 Exponents end-of-unit assessment revealed an interesting and 
-      somewhat unexpected pattern. Students performed strongest on Questions 2 and 3 — 
-      filling in missing exponents and determining whether equations were true or false — 
+      somewhat unexpected pattern. Students performed strongest on Questions 2 and 3, 
+      filling in missing exponents and determining whether equations were true or false, 
       with 79% of students scoring proficient or above on both. These questions required 
       students to apply exponent rules in a structured way, and the results suggest that 
       most students developed a solid procedural understanding of the rules covered in 
@@ -400,32 +402,30 @@ export default function PlanningAndPreparation() {
       <br /><br />
       However, performance was notably weaker on Questions 1 and 4. Question 1, which 
       asked students to identify all equivalent expressions, had the lowest proficiency 
-      rate at 46% — with 7 students scoring a 1 and 8 scoring a 2. This is striking 
+      rate at 46%, with 7 students scoring a 1 and 8 scoring a 2. This is striking 
       because selecting equivalent expressions requires the same underlying knowledge 
       as the other questions, suggesting that the multiple-select format itself may have 
       contributed to the lower scores. Students may have been uncertain about whether 
       to select an answer when they were not fully confident, leading to omissions that 
       dropped their score even when their partial understanding was sound. Question 4, 
       which asked students to simplify five expressions using a single exponent, had a 
-      54% proficiency rate — better than Question 1 but still below the class performance 
+      54% proficiency rate, better than Question 1 but still below the class performance 
       on Questions 2 and 3. The distribution here was more spread, with 8 students scoring 
       a 2, suggesting partial mastery where students could simplify some but not all 
       expressions correctly.
       <br /><br />
       One factor worth noting is that Question 3 included a rubric penalty for missing 
-      explanations — scores were reduced one level if students did not justify their 
+      explanations. Scores were reduced one level if students did not justify their 
       true/false answers. Despite this added requirement, students still performed well 
       on this question, which suggests they were generally able to articulate their 
       reasoning when prompted to do so.
       <br /><br />
       In hindsight, I would have used this data to design a targeted re-teaching session 
-      focused on recognizing equivalent expressions — particularly helping students 
+      focused on recognizing equivalent expressions, particularly helping students 
       develop confidence in the multiple-select format by practicing the strategy of 
       testing each option independently rather than trying to evaluate all options at 
       once. I would also have reviewed Question 4 errors to identify which specific 
-      exponent rules — negative exponents, zero exponents, or multiplication and division 
-      rules — were causing the most difficulty, and addressed those specifically rather 
-      than re-teaching the whole unit.
+      exponent rules were causing the most difficulty, and addressed those specifically.
     </p>
 
           </div>

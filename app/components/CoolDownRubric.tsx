@@ -28,7 +28,7 @@ export default function CooldownRubric() {
             </tr>
             <tr>
               <td className="rubric-score">3</td>
-              <td>Equivalent expression written in the form <em>a × 10<sup>y</sup></em>, but <em>a</em> is not between 1 and 10 — or correct form and correct <em>a</em> with an incorrect exponent</td>
+              <td>Equivalent expression written in the form <em>a × 10<sup>y</sup></em>, but <em>a</em> is not between 1 and 10, or correct form and correct <em>a</em> with an incorrect exponent</td>
             </tr>
             <tr>
               <td className="rubric-score rubric-score-correct">4</td>
