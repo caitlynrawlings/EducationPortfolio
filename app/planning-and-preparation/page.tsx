@@ -69,7 +69,7 @@ export default function PlanningAndPreparation() {
           </p>
           {/* Extenstions for early finishers (leveled practice) */}
           <div className="artifact-block">
-              <div className="artifact-meta">Pythagrean Theorem · March 2026</div>
+              <div className="artifact-meta">Leveled Practice: Pythagorean Theorem  · March 2026</div>
               <Gallery slides={[
                 { images: [`${basePath}/images/pythagreanTheoremLeveledPractive/77a171b7-1.png`], caption: 'Level 1: Identifying the sides of a right triangle' },
                 { images: [`${basePath}/images/pythagreanTheoremLeveledPractive/77a171b7-2.png`], caption: 'Level 2: Solving for the hypotenuse' },
@@ -105,7 +105,7 @@ export default function PlanningAndPreparation() {
             individual growth.
           </p>
           <div className="artifact-block">
-  <div className="artifact-meta">Scientific Notation · February 2026</div>
+  <div className="artifact-meta">Choice Practice: Scientific Notation · February 2026</div>
 
   <p><strong>Step 1 — Student Self-Assessment</strong></p>
     <p>

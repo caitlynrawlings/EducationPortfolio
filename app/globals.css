@@ -376,6 +376,7 @@ footer {
   font-size: 0.93rem;
   line-height: 1.8;
   color: var(--foreground);
+  margin-bottom: 0.75rem;
 }
 
 .section ul {
@@ -387,6 +388,23 @@ footer {
 .section ul li {
   font-size: 0.95rem;
   line-height: 1.8;
+}
+
+.section ol {
+  padding-left: 1.25rem;
+  margin: 0.5rem 0;
+  list-style-type: decimal;
+}
+
+.section ol li {
+  font-size: 0.93rem;
+  line-height: 1.8;
+  color: var(--foreground);
+  margin-bottom: 0.75rem;
+}
+
+.section ol li:last-child {
+  margin-bottom: 0;
 }
 
 /* ── HEADER ── */
@@ -1047,3 +1065,4 @@ p.slideshow-caption {
   height: 2.5rem;
   flex-shrink: 0;
 }
+

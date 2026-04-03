@@ -21,7 +21,7 @@ export default function TheClassroomEnvironment() {
         </p>
 
         <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
-          <div className="artifact-meta">Original Arrangement · 10 Table Groups · January 2026</div>
+          <div className="artifact-meta">Original Arrangement: 10 Table Groups · January-February 2026</div>
           <p>
             When I entered my student teaching placement, the classroom was arranged in 
             ten table groups. This arrangement was designed to facilitate collaborative 
@@ -34,11 +34,11 @@ export default function TheClassroomEnvironment() {
         </div>
 
         <div className="artifact-block">
-          <div className="artifact-meta">Revised Arrangement · Horseshoe · February 2026</div>
+          <div className="artifact-meta">Revised Arrangement: Horseshoe · February-April 2026</div>
           <p>
             After observing the class for several weeks, my mentor teacher and I made the 
             collaborative decision to transition to a horseshoe arrangement. This change 
-            was driven by the behavioral dynamics of the class — the table group arrangement 
+            was driven by the behavioral dynamics of the class, the table group arrangement 
             made it difficult to maintain student focus and manage off-task conversations 
             between students. The horseshoe arrangement allowed every student to face the 
             board, reduced opportunities for disruptive side conversations, and gave me 
@@ -64,8 +64,7 @@ export default function TheClassroomEnvironment() {
             students at neighboring tables to collaborate, preserving the cooperative 
             dynamic of the original arrangement while better supporting instructional flow. 
             This experience reinforced for me that the physical environment is not a neutral 
-            backdrop to learning — thoughtful arrangement can quietly support both instruction 
-            and student interaction at the same time.
+            backdrop to learning.
           </div>
         </div>
 
@@ -87,8 +86,8 @@ export default function TheClassroomEnvironment() {
               { images: [`${basePath}/images/seatingChart/10Tables.png`], caption: '10 Tables' },
               { images: [`${basePath}/images/seatingChart/horseShoe.png`], caption: 'Horse Shoe Tables' },
             ]} />
-            <p>This is how I display the seating chart. It displays each "student" would have a student name. For the 10 tables seating arrangement,
-            I this tells the students which table they are seated at, but not which seat at the table. This allows for come flexibility in 
+            <p>This is how I display the seating chart. Each "student" would be a student name. For the 10 tables seating arrangement,
+            this tells the students which table they are seated at, but not which seat at the table. This allows for flexibility in 
             seating arrangements and encourages students to interact with different peers. The horseshoe seating specifies the exact seat that they should be seated in. </p>
           </div>
         </div>
@@ -143,7 +142,7 @@ export default function TheClassroomEnvironment() {
         </li>
         <li style={{ marginBottom: '0.75rem', lineHeight: '1.8' }}>
           <strong>R&R (Reset and Restore)</strong> — If the behavior continues, 
-          utilize the school's R&R protocol in which another staff member comes to 
+          utilize the school's R&R protocol, in which another staff member comes to 
           speak with the student and support them in resetting before returning to class.
         </li>
         <li style={{ marginBottom: '0.75rem', lineHeight: '1.8' }}>
@@ -153,7 +152,7 @@ export default function TheClassroomEnvironment() {
         <li style={{ lineHeight: '1.8' }}>
           <strong>Write-up</strong> — Repeated or escalating behavior that cannot 
           be resolved through the above steps results in a formal write-up submitted 
-          to administration.
+          to the administration.
         </li>
       </ol>
 
@@ -174,7 +173,7 @@ export default function TheClassroomEnvironment() {
         </li>
       </ul>
 
-      <div className="callout">
+      {/* <div className="callout">
         <span className="label">Reflection</span>
         Developing and applying this approach was one of the most challenging and 
         valuable aspects of my student teaching placement. My 6th period class in 
@@ -187,7 +186,7 @@ export default function TheClassroomEnvironment() {
         concerns and to recognize positive behavior — also deepened my understanding 
         of how family communication and classroom management work together to support 
         a productive learning environment.
-      </div>
+      </div> */}
     </div>
   </div>
 </div>
