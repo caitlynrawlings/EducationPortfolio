@@ -22,7 +22,7 @@ export default function Instruction() {
         teacher markings indicating what was correct, give students one class period to 
         review their work, and then collect the tests for a final grade. For the assessment 
         shown below, my mentor teacher and I made the collaborative decision to offer two 
-        rounds of revision opportunities given the difficulty of the test, we wanted 
+        rounds of revision opportunities. Given the difficulty of the test, we wanted 
         students to have multiple chances to engage with their errors and demonstrate 
         growth. In all of the following examples, orange markings reflect feedback from 
         the first round and purple markings reflect the second round.
@@ -32,7 +32,7 @@ export default function Instruction() {
         <div className="artifact-meta">Written Feedback on Student Test · March 2026</div>
 
         <Gallery slides={[
-          { images: [`${basePath}/images/writtenFeedback/correctedExplanation.png`], caption: 'Example 1 — Prompting student reasoning' },
+          { images: [`${basePath}/images/writtenFeedback/correctedExplanation.png`], caption: 'Example 1: Prompting student reasoning' },
         ]} />
         <p>
           In this example, rather than simply marking the answer as incorrect, I prompted 
@@ -46,10 +46,10 @@ export default function Instruction() {
         </p>
 
         <Gallery slides={[
-          { images: [`${basePath}/images/writtenFeedback/missingInequality.png`], caption: 'Example 2 — Identifying a missing component' },
+          { images: [`${basePath}/images/writtenFeedback/missingInequality.png`], caption: 'Example 2: Identifying a missing component' },
         ]} />
         <p>
-          In this example I acknowledged the steps the student had completed correctly 
+          In this example, I acknowledged the steps the student had completed correctly 
           before directing their attention to two specific issues. One issue was an arithmetic error 
           in their work and the other was a missing inequality symbol in their final answer. 
           Even if the arithmetic had been correct, the absence of the inequality 
@@ -70,7 +70,7 @@ export default function Instruction() {
       <h2>Personal Lesson Reflections</h2>
       <p className="blurb">
         Reflective practice is one of the most important habits a teacher can develop. 
-        Throughout my student teaching placement I kept a running log of observations, 
+        Throughout my student teaching placement, I kept a running log of observations, 
         challenges, and adjustments across my lessons. The following entries highlight 
         key moments of growth across five areas of my developing practice: adjusting 
         lesson difficulty, cold calling strategies, in-the-moment differentiation, 
@@ -83,7 +83,7 @@ export default function Instruction() {
 
         <p><strong>What Happened</strong></p>
         <p>
-          Early in my placement I struggled with calibrating the difficulty level of 
+          Early in my placement, I struggled with calibrating the difficulty level of 
           the practice problems I wrote. After my mentor teacher was absent on 2/2, 
           I reflected that the problems I had written for the 8th graders were too 
           hard. Students were frustrated and the lesson lost momentum. This pattern 
@@ -97,7 +97,7 @@ export default function Instruction() {
           at a level appropriate for where students were in their understanding. Writing 
           good practice problems requires knowing not just the content but the specific 
           entry points and common struggle points of your students. This takes 
-          time and observation to develop, as well as a deep understanding of the cirriculum. 
+          time and observation to develop, as well as a deep understanding of the curriculum. 
           I also recognized that problems that are too 
           hard can be more damaging than problems that are too easy, because frustration 
           shuts down engagement entirely.
@@ -174,7 +174,7 @@ export default function Instruction() {
           still ended up working on the skill they needed, with the 
           differentiation happened in content even if not in grouping. Even without this grouping, 
           I thought the lesson was effective and my mentor teacher agreed, saying that she noticed 
-          good student engagement.I also reflected 
+          good student engagement. I also reflected 
           on a similar activity for 7th graders that same day, a progressive three-level 
           practice set, which I liked conceptually but found challenging to manage because 
           many students came up to have their work checked at the same time. I discussed this 
@@ -190,7 +190,7 @@ export default function Instruction() {
           then, but decided not to have students physically move into new groups mid-lesson. 
           Instead, I have kept students in their original seats and had them choose from different 
           activities at their desks, which has been easier to manage while still allowing for differentiation. 
-          I would still like to utilize grouping, but I would prefer to do so when I have my own classroom that
+          I would still like to utilize grouping, but I would prefer to do so when I have my own classroom where
           I will be establishing my own norms and routines in. When doing this activity, I am intentional about 
           the language I use, asking students what they feel they need to work on, to establish student agency 
           over their learning. I also became more intentional about including 
@@ -270,7 +270,7 @@ export default function Instruction() {
 
         <p><strong>What I Did Differently</strong></p>
         <p>
-          In subsequent lessons I became more deliberate about sequencing complexity, 
+          In subsequent lessons, I became more deliberate about sequencing complexity, 
           introducing one new element at a time rather than combining multiple challenging 
           skills in a single activity. I also became more attentive to the difference between 
           an activity that isn't working because of student engagement and one that isn't 
@@ -283,109 +283,117 @@ export default function Instruction() {
 
     </div>
 
-      {/* ── RESPONDING TO FEEDBACK RECEIVED ── */}
-      <div className="section " id="responding-to-feedback">
-        <h2>Responding to Feedback</h2>
-          <p className="blurb">
-            Receiving and responding to feedback is one of the most important parts of 
-            growing as a teacher. Throughout my student teaching placement I received 
-            regular feedback from my mentor teacher, university supervisor, and school 
-            administration — both through formal observations and informal day-to-day 
-            conversations. The following entries document specific feedback I received 
-            and the concrete steps I took to address it. Rather than viewing feedback 
-            as criticism, I approached each piece as an opportunity to refine my practice 
-            and become a more intentional and responsive educator.
-          </p>
       
-      <div style={{ marginBottom: '2rem' }}>
+    {/* ── RESPONDING TO FEEDBACK RECEIVED ── */}
+<div className="section" id="responding-to-feedback">
+  <h2>Responding to Feedback</h2>
+  <p className="blurb">
+    Receiving and responding to feedback is one of the most important parts of 
+    growing as a teacher. Throughout my student teaching placement I received 
+    regular feedback from my mentor teacher, university supervisor, and school 
+    administration. The following entries document specific feedback I received 
+    and the steps I took to address it. I approach each piece of feedback as an 
+    opportunity to refine my practice and become a more intentional and responsive educator.
+  </p>
 
-        <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
-          <div className="artifact-meta">Feedback & Response · February 3, 2026</div>
+  <div style={{ marginBottom: '2rem' }}>
 
-          <p><strong>Feedback Received</strong></p>
-          <p>
-            After my first formal observation on 2/3, my mentor teacher noted that I should 
-            use more simple and straightforward examples when introducing new content, and 
-            that I should slow down my pace to give students more processing time. At that 
-            point in my placement I was moving through content at a pace that felt natural 
-            to me but was too fast for students who were encountering the material for the 
-            first time.
-          </p>
+    <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
+      <div className="artifact-meta">Feedback & Response · February 3, 2026</div>
 
-          <p><strong>How I Responded</strong></p>
-          <p>
-            I became more deliberate about starting with the most basic version of a concept 
-            before increasing complexity, and about building in pauses and countdowns to give 
-            students time to think before expecting responses. This connected directly to the 
-            improvements I was making in calibrating the difficulty of my practice problems — 
-            both changes reflected a broader shift toward meeting students where they were 
-            rather than where I expected them to be.
-          </p>
-        </div>
+      <p><strong>Feedback Received</strong></p>
+      <p>
+        After my first formal observation on 2/3, my mentor teacher noted that I should 
+        use simpler and more straightforward examples when introducing new content, and 
+        that I should slow down my pace to give students more processing time. At that 
+        point in my placement I was moving through content at a pace that felt natural 
+        to me but was too fast for students who were encountering the material for the 
+        first time.
+      </p>
 
-        <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
-          <div className="artifact-meta">Feedback & Response · Putting the Cognitive Load on Students</div>
-
-          <p><strong>Feedback Received</strong></p>
-          <p>
-            Classroom management. Clinical supervisor told me to put it on student. Ask them if they are ready. 
-            Mentor teacher told me to use more positive praise and proximity to manage behavior, and to use cold calling more effectively to keep students engaged.
-          </p>
-
-          <p><strong>How I Responded</strong></p>
-          <p>
-            
-          </p>
-        </div>
-
-        <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
-          <div className="artifact-meta">Feedback & Response · Varying Activity Formats to Maintain Engagement</div>
-
-          <p><strong>Feedback Received</strong></p>
-          <p>
-            My mentor teacher pointed out that doing the same activity format multiple days 
-            in a row caused students to disengage quickly, and encouraged me to vary formats 
-            more intentionally. This was reinforced in a conversation with another teacher on 
-            3/20, who noted that even activities students initially enjoy
-            lose their effectiveness when used too often repeatedly.
-          </p>
-
-          <p><strong>How I Responded</strong></p>
-          <p>
-            I became more intentional about rotating formats across consecutive lessons, 
-            alternating between marker work, packet practice, whiteboards, five-minute drills, 
-            and online activities. On 3/17 I reflected that simply switching from marker work to packet 
-            work made students noticeably calmer and more productive, a reminder that variety 
-            itself has value beyond the specific activity chosen. This feedback also influenced 
-            how I thought about planning, pushing me to consider the sequence of activities 
-            across a unit rather than just within a single lesson.
-          </p>
-        </div>
-
-        <div className="artifact-block">
-          <div className="artifact-meta">Feedback & Response · March 20, 2026</div>
-
-          <p><strong>Feedback Received</strong></p>
-          <p>
-            During a classroom visit on 3/20 the school principal noted that he liked seeing 
-            learning targets and success criteria included directly on student materials. This 
-            was feedback I had not received before and it prompted me to reflect on how 
-            consistently I was making the purpose of each lesson transparent to students.
-          </p>
-
-          <p><strong>How I Responded</strong></p>
-          <p>
-            Following this feedback I made a deliberate effort to incorporate learning targets 
-            and success criteria into the materials I designed, so students could clearly see 
-            what they were working toward and what success looked like. This connected to broader 
-            conversations I had been having with my mentor teacher about helping students 
-            understand the why behind their learning — making success criteria visible is one 
-            concrete way to answer that question before students even have to ask it.
-          </p>
-        </div>
-
-      </div>
+      <p><strong>How I Responded</strong></p>
+      <p>
+        I became more deliberate about starting with the most basic version of a concept 
+        before increasing complexity, and about building in pauses and countdowns to give 
+        students time to think before expecting responses. This connected directly to the 
+        improvements I was making in calibrating the difficulty of my practice problems. 
+        Both changes reflected a broader shift toward meeting students where they were 
+        rather than where I expected them to be.
+      </p>
     </div>
+
+    <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
+      <div className="artifact-meta">Feedback & Response · February 11, 2026</div>
+
+      <p><strong>Feedback Received</strong></p>
+      <p>
+        After my second formal observation on 2/11, my university supervisor encouraged 
+        me to put more of the cognitive load on students rather than explaining everything 
+        from the front of the room, specifically suggesting I ask students whether they 
+        are ready rather than managing their attention directly. My mentor teacher echoed 
+        this, encouraging me to use more positive praise and proximity to manage behavior 
+        and to use cold calling more effectively to keep students engaged and accountable.
+      </p>
+
+      <p><strong>How I Responded</strong></p>
+      <p>
+        I began incorporating cold calling more consistently and adopted language that 
+        placed responsibility on students — phrases like "are you ready?" and "do I need 
+        to wait for you?" shifted the dynamic so students were signaling their own 
+        readiness rather than me managing it for them. I also became more deliberate 
+        about using positive praise for on-task students as a proactive management 
+        strategy rather than only responding to disruptive behavior. By 3/19 my mentor 
+        teacher noted that I was doing well at cold calling and keeping students more engaged.
+      </p>
+    </div>
+
+    <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
+      <div className="artifact-meta">Feedback & Response · March 6, 2026</div>
+
+      <p><strong>Feedback Received</strong></p>
+      <p>
+        My mentor teacher pointed out that doing the same activity format multiple days 
+        in a row caused students to disengage quickly, and encouraged me to vary formats 
+        more intentionally. This was reinforced in a conversation with another teacher on 
+        3/20, who noted that even activities students initially enjoy lose their 
+        effectiveness when used too often.
+      </p>
+
+      <p><strong>How I Responded</strong></p>
+      <p>
+        I became more intentional about rotating formats across consecutive lessons, 
+        alternating between marker work, packet practice, whiteboards, five-minute drills, 
+        and online activities. On 3/17 I reflected that simply switching from marker work 
+        to packet work made students noticeably calmer and more productive. This feedback 
+        also influenced how I thought about planning, pushing me to consider the sequence 
+        of activities across a unit rather than just within a single lesson.
+      </p>
+    </div>
+
+    <div className="artifact-block">
+      <div className="artifact-meta">Feedback & Response · March 20, 2026</div>
+
+      <p><strong>Feedback Received</strong></p>
+      <p>
+        During a classroom visit on 3/20 the school principal noted that he liked seeing 
+        learning targets and success criteria included directly on student materials. This 
+        was feedback I had not received before and it prompted me to reflect on how 
+        consistently I was making the purpose of each lesson transparent to students.
+      </p>
+
+      <p><strong>How I Responded</strong></p>
+      <p>
+        Following this feedback I made a deliberate effort to incorporate learning targets 
+        and success criteria into the materials I designed, so students could clearly see 
+        what they were working toward and what success looked like. This connected to broader 
+        conversations I had been having with my mentor teacher about helping students 
+        understand the why behind their learning. Making success criteria visible is one 
+        concrete way to answer that question before students even have to ask it.
+      </p>
+    </div>
+
+  </div>
+</div>
 
     </div>
   )

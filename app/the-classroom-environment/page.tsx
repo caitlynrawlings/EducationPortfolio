@@ -80,7 +80,7 @@ export default function TheClassroomEnvironment() {
           </p>
 
           <div className="artifact-block">
-            <div className="artifact-meta">Seating Chart · Student Teaching Placement</div>
+            <div className="artifact-meta">Seating Chart · January-April 2026</div>
 
             <Gallery slides={[
               { images: [`${basePath}/images/seatingChart/10Tables.png`], caption: '10 Tables' },
@@ -110,7 +110,7 @@ export default function TheClassroomEnvironment() {
     </p>
 
     <div className="artifact-block">
-      <div className="artifact-meta">Behavior Management Approach · Student Teaching Placement</div>
+      <div className="artifact-meta">Behavior Management Approach · January-April 2026</div>
 
       <p><strong>Proactive Strategies</strong></p>
       <ul>
