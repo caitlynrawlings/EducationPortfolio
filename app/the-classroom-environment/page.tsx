@@ -33,7 +33,7 @@ export default function TheClassroomEnvironment() {
           ]} />
         </div>
 
-        <div className="artifact-block">
+        <div className="artifact-block" id="artifact-2">
           <div className="artifact-meta">Revised Arrangement: Horseshoe · February-April 2026</div>
           <p>
             After observing the class for several weeks, my mentor teacher and I made the 

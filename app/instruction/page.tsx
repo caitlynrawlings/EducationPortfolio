@@ -28,7 +28,7 @@ export default function Instruction() {
         the first round and purple markings reflect the second round.
       </p>
 
-      <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
+      <div className="artifact-block" id="artifact-3" style={{ marginBottom: '1.5rem' }}>
         <div className="artifact-meta">Written Feedback on Student Test · March 2026</div>
 
         <Gallery slides={[

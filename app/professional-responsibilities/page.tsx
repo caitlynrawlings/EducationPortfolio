@@ -19,7 +19,7 @@ export default function ProfessionalResponsibilities() {
           communication platform. These messages kept families informed of 
           upcoming units, learning objectives, and ways to support their student at home.
         </p>
-        <div className="artifact-block">
+        <div className="artifact-block" id="artifact-4">
           <div className="artifact-meta">Final ParentSquare Message Content · March 2026</div>
           <p><strong>Upcoming Math Units: Scale Copies and Circle Measurements (7th Grade)</strong></p>
           <br />

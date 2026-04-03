@@ -27,7 +27,7 @@ export default function PlanningAndPreparation() {
           for students while allowing flexibility in how content is delivered.
         </p>
 
-        <div className="artifact-block">
+        <div className="artifact-block" id="artifact-1">
           <div className="artifact-meta">Direct Instruction Lesson Plan · February 2026</div>
           <Gallery slides={[
             { images: [`${basePath}/images/lessonPlans/LessonPlan1-1.png`, `${basePath}/images/lessonPlans/LessonPlan1-2.png`, `${basePath}/images/lessonPlans/LessonPlan1-3.png`], caption: 'Rational vs. Irrational Numbers - 8th Grade Math' },
