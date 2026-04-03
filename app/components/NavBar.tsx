@@ -162,7 +162,7 @@ export default function NavBar() {
                   {sections.map(({ label, id }) => (
                     <a
                       key={id}
-                      href={`${href}#${id}`}
+                      href={`${basePath}${href}#${id}`}
                       className="nav-mobile-child"
                       onClick={() => { setMenuOpen(false); setExpandedMobile(null) }}
                     >
