@@ -25,7 +25,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Caitlyn Rawlings | Education Portfolio",
+  title: "Caitlyn Rawlings | Teaching Portfolio",
 };
 
 export default function RootLayout({

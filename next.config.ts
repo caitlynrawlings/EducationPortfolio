@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig = {
   output: 'export',
-  basePath: '/EducationPortfolio',
+  basePath: '/',
   images: {
     unoptimized: true,
   },
