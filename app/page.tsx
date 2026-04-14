@@ -1,6 +1,5 @@
 // app/page.tsx
 import Link from 'next/link'
-import basePath from './utils/basePath'
 
 const domains = [
   {
@@ -36,7 +35,7 @@ export default function Home() {
       {/* ── HERO ── */}
       <div className="hero-section">
         <img
-          src={`${basePath}/images/profile.png`}
+          src="/images/profile.png"
           alt="Profile photo"
           className="profile-photo"
         />
@@ -67,7 +66,7 @@ export default function Home() {
       <div className="section">
         <div className="resume-header-row">
           <h2>Resume</h2>
-          <a href={`${basePath}/RawlingsResumePDF.pdf`} download className="download-btn">
+          <a href="/RawlingsResumePDF.pdf" download className="download-btn">
             Download PDF
           </a>
         </div>
