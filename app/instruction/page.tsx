@@ -1,7 +1,6 @@
 // app/instruction/page.tsx
 
 import Gallery from "../components/Gallery";
-import basePath from "../utils/basePath";
 
 export default function Instruction() {
   return (
@@ -32,7 +31,7 @@ export default function Instruction() {
         <div className="artifact-meta">Written Feedback on Student Test · March 2026</div>
 
         <Gallery slides={[
-          { images: [`${basePath}/images/writtenFeedback/correctedExplanation.png`], caption: 'Example 1: Prompting student reasoning' },
+          { images: [`/images/writtenFeedback/correctedExplanation.png`], caption: 'Example 1: Prompting student reasoning' },
         ]} />
         <p>
           In this example, rather than simply marking the answer as incorrect, I prompted 
@@ -46,7 +45,7 @@ export default function Instruction() {
         </p>
 
         <Gallery slides={[
-          { images: [`${basePath}/images/writtenFeedback/missingInequality.png`], caption: 'Example 2: Identifying a missing component' },
+          { images: [`/images/writtenFeedback/missingInequality.png`], caption: 'Example 2: Identifying a missing component' },
         ]} />
         <p>
           In this example, I acknowledged the steps the student had completed correctly 

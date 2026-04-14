@@ -4,7 +4,6 @@ import CooldownChart from '../components/CoolDownChart'
 import CooldownRubric from '../components/CoolDownRubric'
 import Gallery from '../components/Gallery'
 import TestChart from '../components/TestChart'
-import basePath from '../utils/basePath'
 
 
 export default function PlanningAndPreparation() {
@@ -30,14 +29,14 @@ export default function PlanningAndPreparation() {
         <div className="artifact-block" id="artifact-1">
           <div className="artifact-meta">Direct Instruction Lesson Plan · February 2026</div>
           <Gallery slides={[
-            { images: [`${basePath}/images/lessonPlans/LessonPlan1-1.png`, `${basePath}/images/lessonPlans/LessonPlan1-2.png`, `${basePath}/images/lessonPlans/LessonPlan1-3.png`], caption: 'Rational vs. Irrational Numbers - 8th Grade Math' },
+            { images: [`/images/lessonPlans/LessonPlan1-1.png`, `/images/lessonPlans/LessonPlan1-2.png`, `/images/lessonPlans/LessonPlan1-3.png`], caption: 'Rational vs. Irrational Numbers - 8th Grade Math' },
           ]} />
         </div>
 
         <div className="artifact-block" style={{ marginBottom: '1.5rem' }}>
           <div className="artifact-meta">Direct Instruction Lesson Plan · March 2026</div>
           <Gallery slides={[
-            { images: [`${basePath}/images/lessonPlans/LessonPlan2-1.png`, `${basePath}/images/lessonPlans/LessonPlan2-2.png`, `${basePath}/images/lessonPlans/LessonPlan2-3.png`], caption: 'Angle Relationships - 7th Grade Math' },
+            { images: [`/images/lessonPlans/LessonPlan2-1.png`, `/images/lessonPlans/LessonPlan2-2.png`, `/images/lessonPlans/LessonPlan2-3.png`], caption: 'Angle Relationships - 7th Grade Math' },
           ]} />
         </div>
       </div>
@@ -71,13 +70,13 @@ export default function PlanningAndPreparation() {
           <div className="artifact-block">
               <div className="artifact-meta">Leveled Practice: Pythagorean Theorem  · March 2026</div>
               <Gallery slides={[
-                { images: [`${basePath}/images/pythagreanTheoremLeveledPractive/77a171b7-1.png`], caption: 'Level 1: Identifying the sides of a right triangle' },
-                { images: [`${basePath}/images/pythagreanTheoremLeveledPractive/77a171b7-2.png`], caption: 'Level 2: Solving for the hypotenuse' },
-                { images: [`${basePath}/images/pythagreanTheoremLeveledPractive/77a171b7-3.png`], caption: 'Level 3: Solving for legs and the hypotenuse' },
-                { images: [`${basePath}/images/pythagreanTheoremLeveledPractive/77a171b7-4.png`], caption: 'Level 4: Solving without a diagram and proving right triangles' },
-                { images: [`${basePath}/images/pythagreanTheoremLeveledPractive/77a171b7-5.png`], caption: 'Level 5: Proving right triangles and real-world application' },
-                { images: [`${basePath}/images/pythagreanTheoremLeveledPractive/77a171b7-6.png`], caption: 'Level 6: Real-world applications' },
-                { images: [`${basePath}/images/pythagreanTheoremLeveledPractive/77a171b7-7.png`], caption: 'Level 7: Extended thinking and challenge problems' },
+                { images: [`/images/pythagreanTheoremLeveledPractive/77a171b7-1.png`], caption: 'Level 1: Identifying the sides of a right triangle' },
+                { images: [`/images/pythagreanTheoremLeveledPractive/77a171b7-2.png`], caption: 'Level 2: Solving for the hypotenuse' },
+                { images: [`/images/pythagreanTheoremLeveledPractive/77a171b7-3.png`], caption: 'Level 3: Solving for legs and the hypotenuse' },
+                { images: [`/images/pythagreanTheoremLeveledPractive/77a171b7-4.png`], caption: 'Level 4: Solving without a diagram and proving right triangles' },
+                { images: [`/images/pythagreanTheoremLeveledPractive/77a171b7-5.png`], caption: 'Level 5: Proving right triangles and real-world application' },
+                { images: [`/images/pythagreanTheoremLeveledPractive/77a171b7-6.png`], caption: 'Level 6: Real-world applications' },
+                { images: [`/images/pythagreanTheoremLeveledPractive/77a171b7-7.png`], caption: 'Level 7: Extended thinking and challenge problems' },
               ]} />
               {/* <p>
               Student work samples from this activity, including written feedback, 
@@ -113,7 +112,7 @@ export default function PlanningAndPreparation() {
       they wanted to focus their practice time on.
     </p>
     <Gallery slides={[
-      { images: [`${basePath}/images/scientificNotation/9803696c-1.png`], caption: 'Student self-assessment — Scientific Notation' }
+      { images: [`/images/scientificNotation/9803696c-1.png`], caption: 'Student self-assessment — Scientific Notation' }
     ]} />
 
   <br />
@@ -127,42 +126,42 @@ export default function PlanningAndPreparation() {
     {
       caption: 'Practice 1: Converting notations',
       images: [
-        `${basePath}/images/scientificNotation/21859b95-3.png`,
+        `/images/scientificNotation/21859b95-3.png`,
       ]
     },
     {
       caption: 'Practice 2: Adding and subtracting with the same power of ten',
       images: [
-        `${basePath}/images/scientificNotation/21859b95-2.png`,
+        `/images/scientificNotation/21859b95-2.png`,
       ]
     },
     {
       caption: 'Practice 3: Adding and subtracting with different powers of ten',
       images: [
-          `${basePath}/images/scientificNotation/21859b95-1.png`,
+          `/images/scientificNotation/21859b95-1.png`,
         ]
       },
       {
       caption: 'Practice 4: Adding and subtracting with converting to scientific notation',
       images: [
-        `${basePath}/images/scientificNotation/21859b95-7.png`,
+        `/images/scientificNotation/21859b95-7.png`,
       ]
     },
     {
       caption: 'Practice 5: Word problems with scientific notation',
       images: [
         
-        `${basePath}/images/scientificNotation/21859b95-5.png`,
-        `${basePath}/images/scientificNotation/21859b95-6.png`,
+        `/images/scientificNotation/21859b95-5.png`,
+        `/images/scientificNotation/21859b95-6.png`,
       ]
     },
     {
       caption: 'Practice 6: Challenge problems across all skills',
       images: [
-        `${basePath}/images/scientificNotation/40af05c2-1.png`,
-        `${basePath}/images/scientificNotation/40af05c2-2.png`,
-        `${basePath}/images/scientificNotation/40af05c2-3.png`,
-        `${basePath}/images/scientificNotation/40af05c2-4.png`,
+        `/images/scientificNotation/40af05c2-1.png`,
+        `/images/scientificNotation/40af05c2-2.png`,
+        `/images/scientificNotation/40af05c2-3.png`,
+        `/images/scientificNotation/40af05c2-4.png`,
       ]
     },
   ]} />
@@ -212,19 +211,19 @@ export default function PlanningAndPreparation() {
               <p>These polls were incorporated into slides during a lesson on irrational numbers. This provided an anonymous 
                 way for students to participate in class and demonstrate their understanding.</p>
               <Gallery slides={[
-                { images: [`${basePath}/images/pollEv/Screenshot 2026-03-16 075009.png`], caption: 'Poll 1' },
-                { images: [`${basePath}/images/pollEv/Screenshot 2026-03-16 075027.png`], caption: 'Poll 2' },
-                { images: [`${basePath}/images/pollEv/Screenshot 2026-03-16 075044.png`], caption: 'Poll 3' },
-                { images: [`${basePath}/images/pollEv/Screenshot 2026-03-16 075059.png`], caption: 'Poll 4' },
-                { images: [`${basePath}/images/pollEv/Screenshot 2026-03-16 075118.png`], caption: 'Poll 5' },
-                { images: [`${basePath}/images/pollEv/Screenshot 2026-03-16 075131.png`], caption: 'Poll 6' },
-                { images: [`${basePath}/images/pollEv/Screenshot 2026-03-16 075144.png`], caption: 'Poll 7' },
-                { images: [`${basePath}/images/pollEv/Screenshot 2026-03-16 075154.png`], caption: 'Poll 8' },
-                { images: [`${basePath}/images/pollEv/Screenshot 2026-03-16 075209.png`], caption: 'Poll 9' },
-                { images: [`${basePath}/images/pollEv/Screenshot 2026-03-16 075219.png`], caption: 'Poll 10' },
-                { images: [`${basePath}/images/pollEv/Screenshot 2026-03-16 075229.png`], caption: 'Poll 11' },
-                { images: [`${basePath}/images/pollEv/Screenshot 2026-03-16 075244.png`], caption: 'Poll 12' },
-                { images: [`${basePath}/images/pollEv/Screenshot 2026-03-16 075254.png`], caption: 'Poll 13' },
+                { images: [`/images/pollEv/Screenshot 2026-03-16 075009.png`], caption: 'Poll 1' },
+                { images: [`/images/pollEv/Screenshot 2026-03-16 075027.png`], caption: 'Poll 2' },
+                { images: [`/images/pollEv/Screenshot 2026-03-16 075044.png`], caption: 'Poll 3' },
+                { images: [`/images/pollEv/Screenshot 2026-03-16 075059.png`], caption: 'Poll 4' },
+                { images: [`/images/pollEv/Screenshot 2026-03-16 075118.png`], caption: 'Poll 5' },
+                { images: [`/images/pollEv/Screenshot 2026-03-16 075131.png`], caption: 'Poll 6' },
+                { images: [`/images/pollEv/Screenshot 2026-03-16 075144.png`], caption: 'Poll 7' },
+                { images: [`/images/pollEv/Screenshot 2026-03-16 075154.png`], caption: 'Poll 8' },
+                { images: [`/images/pollEv/Screenshot 2026-03-16 075209.png`], caption: 'Poll 9' },
+                { images: [`/images/pollEv/Screenshot 2026-03-16 075219.png`], caption: 'Poll 10' },
+                { images: [`/images/pollEv/Screenshot 2026-03-16 075229.png`], caption: 'Poll 11' },
+                { images: [`/images/pollEv/Screenshot 2026-03-16 075244.png`], caption: 'Poll 12' },
+                { images: [`/images/pollEv/Screenshot 2026-03-16 075254.png`], caption: 'Poll 13' },
               ]} />
               {/* <p>
               The answered poll questions can be seen  
@@ -238,12 +237,12 @@ export default function PlanningAndPreparation() {
             <p>Another way to assess student understanding was through exit tickets. I used a mix of digital and physical exit tickets as tools for students at the end of each lesson.</p>
 
               <Gallery slides={[
-                { images: [`${basePath}/images/exitTickets/498faf0b-1.png`], caption: 'Physical Exit Ticket' },
+                { images: [`/images/exitTickets/498faf0b-1.png`], caption: 'Physical Exit Ticket' },
                 { images: 
                   [
-                    `${basePath}/images/exitTickets/Screenshot 2026-03-16 081822.png`,
-                    `${basePath}/images/exitTickets/Screenshot 2026-03-16 081831.png`,
-                    `${basePath}/images/exitTickets/Screenshot 2026-03-16 081839.png`,
+                    `/images/exitTickets/Screenshot 2026-03-16 081822.png`,
+                    `/images/exitTickets/Screenshot 2026-03-16 081831.png`,
+                    `/images/exitTickets/Screenshot 2026-03-16 081839.png`,
                   ], 
                   caption: 'Digital Exit Ticket - Google Form' },
               ]} />
@@ -274,7 +273,7 @@ export default function PlanningAndPreparation() {
               </p>
 
               <Gallery slides={[
-                { images: [`${basePath}/images/exitTickets/d5c5e674-1.png`], caption: 'Physical Exit Ticket' }
+                { images: [`/images/exitTickets/d5c5e674-1.png`], caption: 'Physical Exit Ticket' }
               ]} />
               <CooldownRubric/>
               <CooldownChart/>
@@ -311,9 +310,9 @@ export default function PlanningAndPreparation() {
               </p>
 
               <Gallery slides={[
-                { images: [`${basePath}/images/analysis/IMG_9623.PNG`], caption: 'Score 4 — Correct conversion in both directions' },
-                { images: [`${basePath}/images/analysis/IMG_9624.PNG`], caption: 'Common error — Decimal moved in the wrong direction' },
-                { images: [`${basePath}/images/analysis/IMG_9625.PNG`], caption: 'Common error — Appending zeros rather than moving the decimal' },
+                { images: [`/images/analysis/IMG_9623.PNG`], caption: 'Score 4 — Correct conversion in both directions' },
+                { images: [`/images/analysis/IMG_9624.PNG`], caption: 'Common error — Decimal moved in the wrong direction' },
+                { images: [`/images/analysis/IMG_9625.PNG`], caption: 'Common error — Appending zeros rather than moving the decimal' },
               ]} />
 
             

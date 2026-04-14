@@ -1,7 +1,6 @@
 'use client'
 import Link from 'next/link'
 import { useState, useEffect, useRef } from 'react'
-import basePath from '../utils/basePath'
 
 const nav = [
   {
@@ -106,7 +105,7 @@ export default function NavBar() {
                     {sections.map(({ label, id }) => (
                     <a
                         key={id}
-                        href={`${basePath}${href}#${id}`}
+                        href={`${href}#${id}`}
                         className="nav-dropdown-link"
                         onClick={() => setActiveDropdown(null)}
                       >
@@ -162,7 +161,7 @@ export default function NavBar() {
                   {sections.map(({ label, id }) => (
                     <a
                       key={id}
-                      href={`${basePath}${href}#${id}`}
+                      href={`${href}#${id}`}
                       className="nav-mobile-child"
                       onClick={() => { setMenuOpen(false); setExpandedMobile(null) }}
                     >
