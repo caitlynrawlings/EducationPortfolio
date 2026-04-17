@@ -5,6 +5,8 @@
   --foreground: #2c1e0f;
   --primary: #c17f3e;
   --primary-light: #e8c99a;
+  --primary-dark: #784720;
+  --light: #ffebdb;
   --border: #e8d9c5;
   --muted: #8a7060;
 }
@@ -43,35 +45,61 @@ main {
 }
 
 /* ── PAGE HEADER ── */
+.practice-header {
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid var(--foreground);
+}
+
 .page-header {
   margin-bottom: 3rem;
   padding-bottom: 1.5rem;
   border-bottom: 2px solid var(--foreground);
 }
 
+.practice-header h1,
 .page-header h1 {
   font-size: 2.2rem;
   color: var(--foreground);
   margin-bottom: 0.4rem;
 }
 
+.practice-header p,
 .page-header p {
   color: var(--muted);
   font-size: 0.95rem;
 }
 
 /* ── SECTIONS ── */
+.practice-section,
 .section {
   padding: 2rem 0;
   border-bottom: 1px solid var(--border);
   scroll-margin-top: 60px;
 }
 
+.practice-section:last-child,
 .section:last-child {
   border-bottom: none;
 }
 
-.section h2 {
+a {
+
+}
+
+.domain-header h2 {
+  font-size: 1.5rem;
+  color: var(--foreground);
+  margin-bottom: 0.4rem;
+}
+
+.domain-header p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.section h2, 
+.practice-section h3 {
   font-size: 1.25rem;
   color: var(--primary);
   margin-bottom: 1.25rem;
@@ -79,13 +107,8 @@ main {
   letter-spacing: 0.06em;
 }
 
-/* .section h3 {
-  font-size: 1rem;
-  color: var(--foreground);
-  margin-bottom: 0.75rem;
-  margin-top: 1.5rem;
-} */
-.section h3 {
+.section h3,
+.practice-section h4 {
   font-size: 1rem;
   font-weight: bold;
   color: var(--foreground);
@@ -95,10 +118,13 @@ main {
   border-left: 3px solid var(--primary);
 }
 
-.section h3:first-child {
+.section h3:first-child,
+.practice-section h4:first-child {
   margin-top: 0;
 }
 
+.practice-section p,
+.practice-section li,
 .section p,
 .section li {
   font-size: 0.95rem;
@@ -106,10 +132,12 @@ main {
   color: var(--foreground);
 }
 
+.practice-section ul,
 .section ul {
   padding-left: 1.25rem;
 }
 
+.practice-section img,
 .section img {
   max-width: 100%;
   border-radius: 4px;
@@ -178,14 +206,14 @@ main {
   flex-wrap: wrap;
 }
 
-.contact-row a {
+/* .contact-row a {
   color: var(--primary);
   text-decoration: none;
 }
 
 .contact-row a:hover {
   text-decoration: underline;
-}
+} */
 
 /* ── DOMAIN GRID ── */
 .domain-grid {
@@ -236,17 +264,15 @@ main {
   gap: 1rem;
 }
 
-.download-btn {
+.simple-link {
   background: none;
   color: var(--primary);
-  text-decoration: none;
-  padding: 0.35rem 0;
-  font-size: 0.88rem;
-  border-bottom: 1px solid var(--primary);
+  text-decoration: underline;
   transition: opacity 0.2s;
+  
 }
 
-.download-btn:hover {
+.simple-link:hover {
   opacity: 0.7;
 }
 
@@ -1066,3 +1092,84 @@ p.slideshow-caption {
   flex-shrink: 0;
 }
 
+.tabs-container {
+  position: sticky;
+  top: 3.5rem;
+  z-index: 10;
+  margin-bottom: 1.5rem;
+  color: var(--primary-dark);
+  background-color: var(--background);
+}
+
+.tabs {
+  display: flex;
+}
+.subtabs {
+  display: flex;
+  /* background-color: var(--primary-light); */
+}
+
+.tab-button {
+  padding: 0.5rem 1rem;
+  flex: 1;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border);
+  margin-top: 1rem;
+}
+.subtab-button {
+  padding: 0.5rem 1rem;
+  flex: 1;
+  border: none;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 0.7rem;
+  border: 1px 1px 1px 1px solid;
+  border-bottom: 2px solid transparent;
+  border-color: var(--border);
+  /* background-color: var(--light); */
+}
+
+.tab-button:hover {
+  background-color: var(--primary-light);
+  background-opacity: 0.5;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.subtab-button:hover {
+  background-color: var(--light);
+  background-opacity: 0.5;
+  
+}
+
+.tab-button.active {
+  background-color: var(--primary);
+  color: var(--background);
+  font-weight: 800;
+  border-radius: 0.5rem 0.5rem 0 0;
+  border-color: var(--primary); 
+}
+.subtab-button.active {
+  background-color: var(--primary-light);
+  /* color: var(--primary-dark);
+  font-weight: 600; */
+  border-color: var(--primary);
+  background-opacity: 0.5;
+  border: 1px 1px 1px 1px solid;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-content {
+  /* background: var(--background);
+  border: 1px solid var(--primary-light);
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem; 
+  */
+  padding: 1rem; 
+
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

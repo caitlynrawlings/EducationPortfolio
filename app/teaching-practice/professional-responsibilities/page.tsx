@@ -3,15 +3,15 @@
 
 export default function ProfessionalResponsibilities() {
   return (
-    <div>
-      <div className="page-header">
-        <h1>Professional Responsibilities</h1>
+    <div  id="professional-responsibilities">
+      <div className="domain-header">
+        <h2>Professional Responsibilities</h2>
         <p>Demonstrating professionalism, collaboration, and commitment to the broader school community</p>
       </div>
 
       {/* ── UNIT MESSAGES ── */}
-      <div className="section " id="parent-updates">
-        <h2>General Parent Updates</h2>
+      <div className="practice-section " id="parent-updates">
+        <h3>General Parent Updates</h3>
         <p>
           The following unit messages were drafted by me and sent to families 
           by my mentor teacher through ParentSquare, our school's family 
@@ -77,8 +77,8 @@ export default function ProfessionalResponsibilities() {
       </div>
 
       {/* ── PARENT COMMUNICATION ── */}
-      <div className="section" id="parent-behavior">
-        <h2>Parent Communication About Student Behavior</h2>
+      <div className="practice-section" id="parent-behavior">
+        <h3>Parent Communication About Student Behavior</h3>
 
         <p style={{ marginBottom: '2rem' }}>
           The following emails were drafted by me and sent by my mentor teacher to the families 
@@ -91,7 +91,7 @@ export default function ProfessionalResponsibilities() {
           expressing appreciation for students who were serving as positive role models for their peers.
         </p>
         <div style={{ marginBottom: '2rem' }}>
-          <h3>Positive Behavior Emails</h3>
+          <h4>Positive Behavior Emails</h4>
             <div className="artifact-block">
               <div className="artifact-meta">Body of Email to Student Parent · March 2026</div>
                 I hope you are doing well. I wanted to reach out to let you know how much I have appreciated [Student's Name] in 6th period math class.
@@ -108,7 +108,7 @@ export default function ProfessionalResponsibilities() {
         </div>
 
         <div style={{ marginBottom: '2rem' }}>
-          <h3>Behavior Concern Emails</h3>
+          <h4>Behavior Concern Emails</h4>
           <div className="artifact-block">
             <div className="artifact-meta">Body of Email to Student Parent · March 2026</div>
               I hope you are doing well. I wanted to reach out regarding [Student's Name]'s behavior in 6th period math.
@@ -126,8 +126,8 @@ export default function ProfessionalResponsibilities() {
       </div>
 
       {/* ── DEPARTMENT & TEAM MEETINGS ── */}
-      <div className="section" id="meetings">
-        <h2>Department & Staff Meetings</h2>
+      <div className="practice-section" id="meetings">
+        <h3>Department & Staff Meetings</h3>
         <p style={{ marginBottom: '2rem' }}>
             I attended all staff and PLC meetings held during my student teaching placement. 
             The following are selected examples that represent the range of topics 
@@ -139,13 +139,13 @@ export default function ProfessionalResponsibilities() {
           </p>
 
         {/* <div style={{ marginBottom: '2rem' }}>
-          <h3>Math Department Meeting Notes</h3>
+          <h4>Math Department Meeting Notes</h4>
           {/* Your notes from math department meetings 
           <p>notes</p>
         </div> */}
 
         <div style={{ marginBottom: '2rem' }}>
-          <h3>PLC Meetings</h3>
+          <h4>PLC Meetings</h4>
 
             <div className="artifact-block">
               <div className="artifact-meta">PLC Meeting · February 13, 2026</div>
@@ -342,7 +342,7 @@ export default function ProfessionalResponsibilities() {
         </div>
 
         <div>
-          <h3>Staff Meetings</h3>
+          <h4>Staff Meetings</h4>
           <div className="artifact-block">
               <div className="artifact-meta">Staff Meeting · February 3, 2026</div>
               <strong>Agenda:</strong>
@@ -413,11 +413,11 @@ export default function ProfessionalResponsibilities() {
       </div>
 
       {/* ── PROFESSIONAL DEVELOPMENT ── */}
-      <div className="section " id="professional-development">
-        <h2>Professional Development</h2>
+      <div className="practice-section " id="professional-development">
+        <h3>Professional Development</h3>
 
         <div style={{ marginBottom: '2rem' }}>
-          {/* <h3>Professional Development Day Notes</h3> */}
+          {/* <h4>Professional Development Day Notes</h4> */}
           <div className="artifact-block">
             <div className="artifact-meta">Professional Development Day · February 17, 2026</div>
 
@@ -470,14 +470,14 @@ export default function ProfessionalResponsibilities() {
         </div>
 
         {/* <div style={{ marginBottom: '2rem' }}>
-          <h3>Professional Development Certificates</h3>
+          <h4>Professional Development Certificates</h4>
           {/* Upload or display any certificates earned 
         </div> */}
       </div> 
 
       {/* ── IEP MEETINGS ── */}
-      <div className="section " id="iep">
-        <h2>IEP & Student Support Meetings</h2>
+      <div className="practice-section " id="iep">
+        <h3>IEP & Student Support Meetings</h3>
         <p>
           Participating in student support meetings is a critical part of professional 
           practice that extends well beyond the classroom. During my student teaching 

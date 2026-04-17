@@ -1,19 +1,19 @@
 // app/instruction/page.tsx
 
-import Gallery from "../components/Gallery";
+import Gallery from "../../components/Gallery";
 
 export default function Instruction() {
   return (
-    <div>
-      <div className="page-header">
-        <h1>Instruction</h1>
+    <div id="instruction">
+      <div className="domain-header" >
+        <h2>Instruction</h2>
         <p>Demonstrating responsive, reflective, and feedback-driven teaching practice</p>
       </div>
 
       
     {/* ── WRITTEN FEEDBACK ON STUDENT WORK ── */}
-    <div className="section" id="written-feedback">
-      <h2>Written Feedback on Student Work</h2>
+    <div className="practice-section" id="written-feedback">
+      <h3>Written Feedback on Student Work</h3>
       <p className="blurb">
         Providing timely and meaningful written feedback is essential to helping students 
         learn from their mistakes rather than simply receiving a grade. At my placement 
@@ -65,8 +65,8 @@ export default function Instruction() {
     </div>
 
      {/* ── PERSONAL REFLECTIONS ── */}
-    <div className="section" id="personal-reflections">
-      <h2>Personal Lesson Reflections</h2>
+    <div className="practice-section" id="personal-reflections">
+      <h3>Personal Lesson Reflections</h3>
       <p className="blurb">
         Reflective practice is one of the most important habits a teacher can develop. 
         Throughout my student teaching placement, I kept a running log of observations, 
@@ -284,8 +284,8 @@ export default function Instruction() {
 
       
     {/* ── RESPONDING TO FEEDBACK RECEIVED ── */}
-<div className="section" id="responding-to-feedback">
-  <h2>Responding to Feedback</h2>
+<div className="practice-section" id="responding-to-feedback">
+  <h3>Responding to Feedback</h3>
   <p className="blurb">
     Receiving and responding to feedback is one of the most important parts of 
     growing as a teacher. Throughout my student teaching placement I received 

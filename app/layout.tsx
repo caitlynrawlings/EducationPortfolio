@@ -10,6 +10,10 @@ const nav = [
   { label: 'The Classroom Environment', href: `/the-classroom-environment` },
   { label: 'Instruction', href: `/instruction` },
   { label: 'Professional Responsibilities', href: `/professional-responsibilities` },
+  { label: 'Teaching Philosophy', href: `/teaching-philosophy` },
+  { label: 'Teaching Practice', href: `/teaching-practice` },
+  { label: 'Beyond the Classroom', href: `/beyond-the-classroom` },
+  { label: 'Resume', href: `/resume` },
 ]
 
 
@@ -41,7 +45,7 @@ export default function RootLayout({
         <NavBar />
         <main>{children}</main>
         <footer>
-          <p>© {new Date().getFullYear()} Caitlyn Rawlings | Education Portfolio</p>
+          <p>© {new Date().getFullYear()} Caitlyn Rawlings | Teaching Portfolio</p>
         </footer>
       </body>
     </html>

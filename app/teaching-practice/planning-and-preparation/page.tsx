@@ -1,22 +1,22 @@
 // app/planning-and-preparation/page.tsx
 
-import CooldownChart from '../components/CoolDownChart'
-import CooldownRubric from '../components/CoolDownRubric'
-import Gallery from '../components/Gallery'
-import TestChart from '../components/TestChart'
+import CooldownChart from '../../components/CoolDownChart'
+import CooldownRubric from '../../components/CoolDownRubric'
+import Gallery from '../../components/Gallery'
+import TestChart from '../../components/TestChart'
 
 
 export default function PlanningAndPreparation() {
   return (
     <div>
-      <div className="page-header">
-        <h1>Planning & Preparation</h1>
+      <div className="domain-header" id="planning-and-preparation">
+        <h2>Planning & Preparation</h2>
         <p>Demonstrating thoughtful planning, differentiation, and data-informed instruction</p>
       </div>
 
       {/* ── LESSON PLANS ── */}
-      <div className="section " id="lesson-plans">
-        <h2>Lesson Plans</h2>
+      <div className="practice-section " id="lesson-plans">
+        <h3>Lesson Plans</h3>
         <p className="blurb">
           The following lesson plans were designed and taught during my student teaching 
           placement. Each plan reflects my approach to direct instruction, chunking content 
@@ -42,8 +42,8 @@ export default function PlanningAndPreparation() {
       </div>
 
       {/* ── DIFFERENTIATED MATERIALS ── */}
-      <div className="section " id="differentiated-materials">
-        <h2>Differentiated Materials</h2>
+      <div className="practice-section " id="differentiated-materials">
+        <h3>Differentiated Materials</h3>
         <p style={{ marginBottom: '2rem' }}>
           Effective differentiation means meeting students where they are by adjusting 
           what they learn, how they learn it, and how they demonstrate their understanding. 
@@ -56,7 +56,7 @@ export default function PlanningAndPreparation() {
         </p>
 
         <div style={{ marginBottom: '2rem' }}>
-          <h3>Content</h3>
+          <h4>Content</h4>
           <p className="blurb">
             One method I used to differentiate content was by providing leveled practice materials for students. 
             This activity has all students start at the same problem and then move on to problems of increasing 
@@ -87,7 +87,7 @@ export default function PlanningAndPreparation() {
         </div>
 
         <div style={{ marginBottom: '2rem' }}>
-          <h3>Process</h3>
+          <h4>Process</h4>
           <p className="blurb">
             Differentiating by process means varying the ways students engage with and 
             make sense of content based on their individual needs and readiness. The 
@@ -177,7 +177,7 @@ export default function PlanningAndPreparation() {
         </div>
 
         <div style={{ marginBottom: '2rem' }}>
-          <h3>Product</h3>
+          <h4>Product</h4>
           <p>
             While the math department at my student teaching placement limited summative 
             assessment formats to traditional tests, I varied the ways students demonstrated 
@@ -187,17 +187,17 @@ export default function PlanningAndPreparation() {
             This variety ensured that no single format consistently advantaged or 
             disadvantaged particular learners, and gave me multiple windows into student 
             thinking across different types of tasks. Some of these formative assessments are 
-            discussed below in the <a href="#assessment-tools">Assessment Tools & Data Analysis</a> section.
+            discussed below in the <a href="#assessment-tools">Assessment Tools & Data Analysis</a> practice-section.
           </p>
         </div>
 
 
       {/* ── ASSESSMENT TOOLS & DATA ANALYSIS ── */}
-      <div className="section " id="assessment-tools">
-        <h2>Assessment Tools & Data Analysis</h2>
+      <div className="practice-section " id="assessment-tools">
+        <h3>Assessment Tools & Data Analysis</h3>
 
         <div style={{ marginBottom: '2rem' }}>
-          <h3>Assessment Tools</h3>
+          <h4>Assessment Tools</h4>
           <p className='blurb'>
             Assessment tools I used range from quick formative checks like digital polls and exit tickets to more formal summative assessments. 
             The summative assessments I used were uniform across the math department and were in traditional test formats, but I used a variety of 
@@ -228,7 +228,7 @@ export default function PlanningAndPreparation() {
               {/* <p>
               The answered poll questions can be seen  
               can be found in the <a href="instruction#written-feedback">????</a> domain.
-              Disscussion of how I used the data to inform my instruction can be found in the <a href="#assessment-tools-and-data-analysis">????</a> section below.
+              Disscussion of how I used the data to inform my instruction can be found in the <a href="#assessment-tools-and-data-analysis">????</a> practice-section below.
             </p> */}
           </div>
 
@@ -251,7 +251,7 @@ export default function PlanningAndPreparation() {
       </div>
 
       <div style={{ marginBottom: '2rem' }}>
-          <h3>Data Analysis</h3>
+          <h4>Data Analysis</h4>
           <p className='blurb'>
             I use both formative and summative assessment data to identify patterns in student 
             understanding and inform my instructional decisions. Below is an example of how I 
@@ -331,7 +331,7 @@ export default function PlanningAndPreparation() {
                 classes I taught during this unit.
               </p>
             <div className="rubric-wrapper">
-              <div className="rubric-section">
+              <div className="rubric-practice-section">
                 <p className="rubric-title">Question 1 — Equivalent Expressions (8.EE.A.1)</p>
                 <table className="rubric-table">
                   <thead><tr><th>Score</th><th>Meaning</th></tr></thead>
@@ -345,7 +345,7 @@ export default function PlanningAndPreparation() {
                 </table>
               </div>
 
-              <div className="rubric-section">
+              <div className="rubric-practice-section">
                 <p className="rubric-title">Question 2 — Fill in the Exponent (8.EE.A.1)</p>
                 <table className="rubric-table">
                   <thead><tr><th>Score</th><th>Meaning</th></tr></thead>
@@ -359,7 +359,7 @@ export default function PlanningAndPreparation() {
                 </table>
               </div>
 
-              <div className="rubric-section">
+              <div className="rubric-practice-section">
                 <p className="rubric-title">Question 3 — True or False (8.EE.A.1)</p>
                 <table className="rubric-table">
                   <thead><tr><th>Score</th><th>Meaning</th></tr></thead>
@@ -373,7 +373,7 @@ export default function PlanningAndPreparation() {
                 </table>
               </div>
 
-              <div className="rubric-section">
+              <div className="rubric-practice-section">
                 <p className="rubric-title">Question 4 — Simplify Expressions (8.EE.A.1)</p>
                 <table className="rubric-table">
                   <thead><tr><th>Score</th><th>Meaning</th></tr></thead>

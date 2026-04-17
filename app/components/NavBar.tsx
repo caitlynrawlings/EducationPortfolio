@@ -2,43 +2,84 @@
 import Link from 'next/link'
 import { useState, useEffect, useRef } from 'react'
 
+// const nav = [
+//   {
+//     label: 'Planning & Preparation',
+//     href: `/planning-and-preparation`,
+//     sections: [
+//       { label: 'Lesson Plans', id: 'lesson-plans' },
+//       { label: 'Differentiated Materials', id: 'differentiated-materials' },
+//       { label: 'Assessment Tools & Data Analysis', id: 'assessment-tools' },
+//     ],
+//   },
+//   {
+//     label: 'The Classroom Environment',
+//     href: `/the-classroom-environment`,
+//     sections: [
+//       { label: 'Room Layout', id: 'room-layout' },
+//       { label: 'Seating Chart', id: 'seating-chart' },
+//       { label: 'Classroom Management', id: 'classroom-management' },
+//     ],
+//   },
+//   {
+//     label: 'Instruction',
+//     href: `/instruction`,
+//     sections: [
+//       { label: 'Written Feedback', id: 'written-feedback' },
+//       { label: 'Personal Reflections', id: 'personal-reflections' },
+//       { label: 'Responding to Feedback', id: 'responding-to-feedback' },
+//     ],
+//   },
+//   {
+//     label: 'Professional Responsibilities',
+//     href: `/professional-responsibilities`,
+//     sections: [
+//       { label: 'General Parent Updates', id: 'parent-updates' },
+//       { label: 'Parent Communication', id: 'parent-behavior' },
+//       { label: 'Department & Staff Meetings', id: 'meetings' },
+//       { label: 'Professional Development', id: 'professional-development' },
+//       { label: 'IEP & Student Support', id: 'iep' },
+//     ],
+//   },
+// ]
+
 const nav = [
   {
-    label: 'Planning & Preparation',
-    href: `/planning-and-preparation`,
+    label: 'Teaching Philosophy',
+    href: `/teaching-philosophy`,
     sections: [
-      { label: 'Lesson Plans', id: 'lesson-plans' },
-      { label: 'Differentiated Materials', id: 'differentiated-materials' },
-      { label: 'Assessment Tools & Data Analysis', id: 'assessment-tools' },
+      { label: 'Content Knowledge', id: 'content-knowledge' },
+      { label: 'Instructional Practice', id: 'instructional-practice' },
+      { label: 'Building Community', id: 'building-community' },
+      { label: 'Developing Lifelong Skills', id: 'developing-lifelong-skills' },
+      { label: 'Professional Growth', id: 'professional-growth' },
     ],
   },
   {
-    label: 'The Classroom Environment',
-    href: `/the-classroom-environment`,
+    label: 'Teaching Practice',
+    href: `/teaching-practice`,
     sections: [
-      { label: 'Room Layout', id: 'room-layout' },
-      { label: 'Seating Chart', id: 'seating-chart' },
-      { label: 'Classroom Management', id: 'classroom-management' },
+     
     ],
   },
   {
-    label: 'Instruction',
-    href: `/instruction`,
+    label: 'Beyond the Classroom',
+    href: `/beyond-the-classroom`,
     sections: [
-      { label: 'Written Feedback', id: 'written-feedback' },
-      { label: 'Personal Reflections', id: 'personal-reflections' },
-      { label: 'Responding to Feedback', id: 'responding-to-feedback' },
+      { label: 'Math in Computer Science', id: 'math' },
+      { label: 'Creativity in Math', id: 'creativity-in-math' },
+      { label: 'My Must-Reads', id: 'must-reads' },
     ],
   },
   {
-    label: 'Professional Responsibilities',
-    href: `/professional-responsibilities`,
+    label: 'Resume',
+    href: `/resume`,
     sections: [
-      { label: 'General Parent Updates', id: 'parent-updates' },
-      { label: 'Parent Communication', id: 'parent-behavior' },
-      { label: 'Department & Staff Meetings', id: 'meetings' },
-      { label: 'Professional Development', id: 'professional-development' },
-      { label: 'IEP & Student Support', id: 'iep' },
+      { label: 'Professional Profile', id: 'professional-profile' },
+      { label: 'Education', id: 'education' },
+      { label: 'Certifications & Licenses', id: 'certifications' },
+      { label: 'Teaching Experience', id: 'teaching-experience' },
+      { label: 'Additional Experience', id: 'additional-experience' },
     ],
   },
 ]

@@ -1,17 +1,17 @@
 // app/the-classroom-environment/page.tsx
-import Gallery from "../components/Gallery";
+import Gallery from "../../components/Gallery";
 
 export default function TheClassroomEnvironment() {
   return (
     <div>
-      <div className="page-header">
-        <h1>The Classroom Environment</h1>
+      <div className="domain-header"  id="the-classroom-environment">
+        <h2>The Classroom Environment</h2>
         <p>Creating a safe, respectful, and well-organized learning environment</p>
       </div>
 
       {/* ── ROOM LAYOUT ── */}
-      <div className="section" id="room-layout">
-        <h2>Room Layout & Table Arrangements</h2>
+      <div className="practice-section" id="room-layout">
+        <h3>Room Layout & Table Arrangements</h3>
         <p className="blurb">
           The physical arrangement of a classroom communicates expectations and shapes 
           how students interact with each other and with the teacher. The following 
@@ -70,8 +70,8 @@ export default function TheClassroomEnvironment() {
       </div>
 
       {/* ── SEATING CHART ── */}
-      <div className="section " id="seating-chart">
-        <h2>Seating Chart</h2>
+      <div className="practice-section " id="seating-chart">
+        <h3>Seating Chart</h3>
 
         <div style={{ marginBottom: '2rem' }}>
           <p className="blurb">I used the seating chart system that my mentor teacher used. Her systems involved changing the seating 
@@ -95,8 +95,8 @@ export default function TheClassroomEnvironment() {
 
 
   {/* ── CLASSROOM MANAGEMENT ── */}
-<div className="section" id="classroom-management">
-  <h2>Classroom Management</h2>
+<div className="practice-section" id="classroom-management">
+  <h3>Classroom Management</h3>
 
   <div style={{ marginBottom: '2rem' }}>
     <p className="blurb">
@@ -191,8 +191,8 @@ export default function TheClassroomEnvironment() {
 </div>
 
       {/* ── ANCHOR CHARTS ──
-      <div className="section " id="anchor-charts">
-        <h2>Anchor Charts</h2>
+      <div className="practice-section " id="anchor-charts">
+        <h3>Anchor Charts</h3>
         {/* Add photos of your anchor charts here */}
         {/* Use a grid layout — example:
         <div className="photo-grid">
