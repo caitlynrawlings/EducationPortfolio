@@ -7,28 +7,30 @@ export default function Resume() {
     <div>
 
       {/* ── HERO ── */}
-      <div className="hero-section">
-        {/* <img
-          src="/images/profile.png"
-          alt="Profile photo"
-          className="profile-photo"
-        /> */}
-        <div className="hero-text">
-          <h1>Resume</h1>
-          <p className="hero-subtitle">Math and Computer Science Educator</p>
-          <p className="hero-bio">
-            {/* 2-3 sentence bio: who you are, where you're student teaching,
-                what draws you to teaching high school math */}
-          </p>
-          <div className="contact-row">
-            <span>caitlyn.rawlings@gmail.com</span>
-            {/* <span><a href="/* linkedin url ">LinkedIn</a></span> */}
+      <div>
+        {/* <h1>Caitlyn Rawlings</h1> */}
+        <div className="hero-section">
+          <img
+            src="/images/profile.png"
+            alt="Profile photo"
+            className="profile-photo"
+          />
+          <div className="hero-text">
+            <h1>Resume</h1>
+            <p className="hero-subtitle">Caitlyn Rawlings | Math and Computer Science Educator</p>
+            {/* <p className="hero-bio">
+              Connecting math, computer science, and creativity.
+            </p> */}
+            {/* QUICK LINKS */}
+            <div className="contact-row">
+              <span>caitlyn.rawlings@gmail.com</span>
+              {/* <span><a href="/* linkedin url ">LinkedIn</a></span> */}
+              <a href="/RawlingsResumePDF.pdf" download className="simple-link">
+                Download Resume
+              </a>
+            </div>
           </div>
-          <a href="/RawlingsResumePDF.pdf" download className="simple-link">
-            Download PDF
-          </a>
         </div>
-       
       </div>
 
       {/* ── TEACHING PHILOSOPHY ──

@@ -64,6 +64,49 @@ export default function TeachingPractice() {
     }
   }, [activeTab]);
 
+  useEffect(() => {
+  const currentTab = tabs.find(
+    tab =>
+      tab.href === `/${activeTab
+        .toLowerCase()
+        .replace(/ /g, "-")
+        .replace(/&/g, "and")}`
+  );
+
+  if (!currentTab) return;
+
+  function handleScroll() {
+    const offset = 180; // 👈 matches your header spacing
+    let closestSection = "";
+    let closestDistance = Infinity;
+
+    currentTab?.sections.forEach(section => {
+      const el = document.getElementById(section.id);
+      if (!el) return;
+
+      const rect = el.getBoundingClientRect();
+      const distance = Math.abs(rect.top - offset);
+
+      // only consider sections that have reached near the top
+      if (rect.top <= offset + 100 && distance < closestDistance) {
+        closestDistance = distance;
+        closestSection = section.id;
+      }
+    });
+
+    if (closestSection) {
+      setActiveSubTab(closestSection);
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+  handleScroll(); // run once on mount
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, [activeTab]);
+
   function scroll(id : string, offset : number) {
     const el = document.getElementById(id);
 
@@ -84,7 +127,7 @@ export default function TeachingPractice() {
       <div className="practice-header">
         <h1>Teaching Practice</h1>
         <p>
-            This page highlights my teaching practices through the four domains of the <a href="https://danielsongroup.org/the-framework-for-teaching/" target="_blank" rel="noopener noreferrer">Danielson Framework for Teaching</a>.
+            This page highlights my teaching practices through the four domains of the <a className="simple-link" href="https://danielsongroup.org/the-framework-for-teaching/" target="_blank" rel="noopener noreferrer">Danielson Framework for Teaching</a>.
         </p>
       </div>
 

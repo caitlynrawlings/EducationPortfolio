@@ -1128,7 +1128,7 @@ p.slideshow-caption {
   border: 1px 1px 1px 1px solid;
   border-bottom: 2px solid transparent;
   border-color: var(--border);
-  /* background-color: var(--light); */
+  background-color: var(--light);
 }
 
 .tab-button:hover {
@@ -1137,7 +1137,7 @@ p.slideshow-caption {
   border-radius: 0.5rem 0.5rem 0 0;
 }
 .subtab-button:hover {
-  background-color: var(--light);
+  background-color: var(--primary-light);
   background-opacity: 0.5;
   
 }
@@ -1150,9 +1150,9 @@ p.slideshow-caption {
   border-color: var(--primary); 
 }
 .subtab-button.active {
-  background-color: var(--primary-light);
-  /* color: var(--primary-dark);
-  font-weight: 600; */
+  background-color: var(--primary);
+  color: #ffffff;
+  /*font-weight: 600; */
   border-color: var(--primary);
   background-opacity: 0.5;
   border: 1px 1px 1px 1px solid;
