@@ -66,7 +66,7 @@ const nav = [
     label: 'Beyond the Classroom',
     href: `/beyond-the-classroom`,
     sections: [
-      { label: 'Math in Computer Science', id: 'math' },
+      { label: 'Math in Computer Science', id: 'cs-and-math' },
       { label: 'Creativity in Math', id: 'creativity-in-math' },
       { label: 'My Must-Reads', id: 'must-reads' },
     ],

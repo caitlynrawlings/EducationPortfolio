@@ -111,9 +111,9 @@ export default function Journey() {
       </div>
 
       {/* GAME AREA */}
-      <div className="relative overflow-x-hidden border rounded-xl h-[300px] bg-gray-50">
+      <div className="relative overflow-x-hidden border rounded-xl h-75 bg-gray-50">
         {/* Timeline line */}
-        <div className="absolute top-1/2 left-0 right-0 h-[2px] bg-gray-300" />
+        <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gray-300" />
 
         {/* World */}
         <div
