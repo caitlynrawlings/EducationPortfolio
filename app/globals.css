@@ -1173,3 +1173,49 @@ p.slideshow-caption {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+
+/* MY JOURNEY */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cream:#FAF7F2;--cream2:#F2EDE4;--terracotta:#C4603A;--terra-light:#F0D4C4;--terra-dark:#8B3E22;
+  --ink:#2C1A0E;--ink2:#5C3D28;--ink3:#9C7A60;--warm-border:rgba(196,96,58,0.18);
+}
+#journey{position:relative;width:100%;padding:2.5rem 0 3rem;font-family:var(--font-sans)}
+.hero{text-align:center;margin-bottom:2rem}
+.hero-title{font-size:24px;font-weight:500;color:var(--ink);margin-bottom:6px}
+.hero-sub{font-size:14px;color:var(--ink3);line-height:1.6}
+.stage-wrap{position:relative;background:var(--cream);border:0.5px solid var(--warm-border);border-radius:20px;overflow:hidden;touch-action:pan-y;height:220px}
+.world{position:absolute;top:0;left:0;height:100%;will-change:transform}
+.stop-node{position:absolute;display:flex;flex-direction:column;align-items:center;transform:translate(-50%,-100%);cursor:pointer}
+.stop-icon{font-size:20px;line-height:1;transition:transform 0.3s cubic-bezier(0.34,1.56,0.64,1)}
+.stop-node.active .stop-icon{transform:scale(1.35) translateY(-4px)}
+.stop-stem{width:1px;background:var(--ink3);opacity:0.28}
+.stop-dot{width:10px;height:10px;border-radius:50%;background:var(--cream2);border:1.5px solid var(--ink3);margin-top:-1px;transition:all 0.25s cubic-bezier(0.34,1.56,0.64,1);flex-shrink:0}
+.stop-node.active .stop-dot{background:var(--terracotta);border-color:var(--terracotta);transform:scale(1.5);box-shadow:0 0 0 4px var(--terra-light)}
+.stop-label{font-size:9.5px;color:var(--ink3);text-align:center;width:70px;line-height:1.3;margin-top:5px;position:absolute;top:calc(100% + 6px);left:50%;transform:translateX(-50%)}
+.stop-node.active .stop-label{color:var(--terra-dark);font-weight:500}
+.walker{position:absolute;display:flex;flex-direction:column;align-items:center;transform:translate(-50%,-100%);z-index:20;pointer-events:none;will-change:left,top}
+.walker-body{width:26px;height:26px;border-radius:50%;background:var(--terracotta);display:flex;align-items:center;justify-content:center;font-size:13px;box-shadow:0 2px 8px rgba(196,96,58,0.4)}
+.walker-stem{width:1px;height:10px;background:var(--terracotta);opacity:0.4}
+.walker-dot{width:6px;height:6px;border-radius:50%;background:var(--terracotta);opacity:0.5;margin-top:-1px}
+.walker-shadow{width:14px;height:4px;background:rgba(196,96,58,0.2);border-radius:50%;margin-top:2px;animation:shadow-pulse 1.2s ease-in-out infinite}
+@keyframes shadow-pulse{0%,100%{transform:scaleX(1);opacity:0.5}50%{transform:scaleX(0.7);opacity:0.2}}
+.controls{display:flex;align-items:center;gap:10px;margin-top:14px}
+.ctrl-btn{width:34px;height:34px;border-radius:50%;background:var(--cream);border:0.5px solid var(--warm-border);color:var(--ink2);font-size:15px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background 0.15s,transform 0.1s;flex-shrink:0}
+.ctrl-btn:hover{background:var(--terra-light)}
+.ctrl-btn:active{transform:scale(0.93)}
+.ctrl-btn:disabled{opacity:0.3;cursor:not-allowed}
+.dots-row{display:flex;gap:6px;align-items:center;flex:1;justify-content:center}
+.nav-dot{width:6px;height:6px;border-radius:50%;background:var(--ink3);opacity:0.25;transition:all 0.2s cubic-bezier(0.34,1.56,0.64,1);cursor:pointer;border:none;padding:0}
+.nav-dot.active{background:var(--terracotta);opacity:1;transform:scale(1.4)}
+.card-area{margin-top:1.5rem;min-height:130px;position:relative}
+.exp-card{background:var(--cream);border:0.5px solid var(--warm-border);border-radius:16px;padding:1.25rem 1.5rem;position:absolute;width:100%;top:0;opacity:0;transform:translateY(10px);transition:opacity 0.35s ease,transform 0.35s cubic-bezier(0.22,1,0.36,1);pointer-events:none}
+.exp-card.visible{opacity:1;transform:translateY(0);pointer-events:auto;position:relative}
+.card-top{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.card-num{font-size:11px;color:var(--terracotta);letter-spacing:0.08em;opacity:0.8}
+.card-icon-wrap{width:36px;height:36px;border-radius:10px;background:var(--terra-light);display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
+.card-title{font-size:15px;font-weight:500;color:var(--ink);line-height:1.3}
+.card-line{width:32px;height:1.5px;background:var(--terracotta);border-radius:1px;margin-bottom:10px}
+.card-body{font-size:13.5px;color:var(--ink2);line-height:1.75}
+.hint-row{text-align:center;margin-top:12px;font-size:11.5px;color:var(--ink3);opacity:0.7}
