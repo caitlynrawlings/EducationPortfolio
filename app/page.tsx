@@ -1,6 +1,6 @@
 // app/page.tsx
 import Link from 'next/link'
-import Journey from './components/Journey.tsx'
+import Journey from './components/Journey'
 
 export default function Home() {
   return (
